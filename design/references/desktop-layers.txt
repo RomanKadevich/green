@@ -1,0 +1,510 @@
+svg {"width": "1920", "height": "5419", "viewBox": "0 0 1920 5419", "fill": "none"}
+  style {}
+  g {"id": "Landing 1920 px", "clip-path": "url(#clip0_3745_11534)"}
+    rect {"width": "1920", "height": "5419", "fill": "#19643B"}
+    g {"id": "Stars 3"}
+      rect {"x": "1690.38", "y": "1506", "width": "309", "height": "209.623", "transform": "rotate(-90 1690.38 1506)", "fill": "url(#pattern0_3745_11534)"}
+    g {"id": "Footer"}
+      rect {"width": "1920", "height": "571", "transform": "translate(0 4848)", "fill": "#134F2E"}
+      g {"id": "Frame 1948754327"}
+        g {"id": "logo"}
+          g {"id": "_2319763457504"}
+            path {"id": "Vector", "fill": "#333333"}
+            path {"id": "Vector_2", "fill": "#FECF1B"}
+            path {"id": "Vector_3", "fill": "#E42725"}
+            path {"id": "Vector_4", "fill": "#333333"}
+            path {"id": "Vector_5", "fill-rule": "evenodd", "clip-rule": "evenodd", "fill": "#FEFEFE"}
+            path {"id": "Vector_6", "fill-rule": "evenodd", "clip-rule": "evenodd", "fill": "#FEFEFE"}
+            path {"id": "Vector_7", "fill-rule": "evenodd", "clip-rule": "evenodd", "fill": "#FEFEFE"}
+            path {"id": "Vector_8", "fill": "#FEFEFE"}
+            path {"id": "Vector_9", "fill": "#FEFEFE"}
+            path {"id": "Vector_10", "fill": "#FEFEFE"}
+      g {"id": "Nav - Menu → List"}
+        text {"id": "Положение о конфиденциальности", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "18", "letter-spacing": "0em"} TEXT Положение о конфиденциальности
+          tspan {"x": "220", "y": "5375.89"}
+        text {"id": "Условия использования", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "18", "letter-spacing": "0em"} TEXT Условия использования
+          tspan {"x": "923", "y": "5375.89"}
+        text {"id": "Политика cookie", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "18", "letter-spacing": "0em"} TEXT Политика cookie
+          tspan {"x": "1529", "y": "5375.89"}
+      g {"id": "Frame 1987300247"}
+        g {"id": "Frame 1987300246"}
+          text {"id": "Heading 2 → Контакты", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "font-weight": "600", "letter-spacing": "0em"} TEXT Горячая линия:
+            tspan {"x": "894", "y": "4951.75"}
+          text {"id": "+375 (29) 658 50 50", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "font-weight": "600", "letter-spacing": "0em"} TEXT +375 (29) 658 50 50
+            tspan {"x": "1158", "y": "4951.75"}
+        g {"id": "Frame 1987300248"}
+          g {"id": "Frame 1987300250"}
+            text {"id": "с 10:00 до 17:00 в будние дни (понедельник- пятница), за исключением выходных и праздничных дней, установленных и объявленных нерабочими в порядке, предусмотренном законодательством;", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "letter-spacing": "0em"} TEXT с 10:00 до 17:00 в будние дни (понедельник- пятница), за исключением выходных 
+и праздничных дней, установленных и объявленных нерабочими в порядке, предусмотренном законодательством;
+              tspan {"x": "894", "y": "5003.84"}
+              tspan {"x": "894", "y": "5027.84"}
+              tspan {"x": "894", "y": "5051.84"}
+          g {"id": "Frame 1987300251"}
+            g {"id": "Для участия в рекламной игре обязательно наличие карты «GREENКАРТА»."}
+              text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "letter-spacing": "0em"} TEXT Для участия в рекламной игре обязательно наличие карты 
+                tspan {"x": "894", "y": "5105.84"}
+              text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "font-weight": "bold", "letter-spacing": "0em"} TEXT «GREENКАРТА».
+                tspan {"x": "1457.95", "y": "5105.84"}
+          g {"id": "Frame 1987300249"}
+            text {"id": "Рекламная игра «Сладкий сезон больших подарков».", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "font-weight": "600", "letter-spacing": "0em"} TEXT Рекламная игра «Сладкий сезон больших подарков». 
+              tspan {"x": "894", "y": "5159.84"}
+            text {"id": "Сроки проведения рекламной игры: С 20 ноября 2026 года по 18 марта 2027 года (включая период розыгрыша и вручения призов).", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "letter-spacing": "0em"} TEXT Сроки проведения рекламной игры: С 20 ноября 2026 года по 18 марта 2027 года (включая период розыгрыша и вручения призов). 
+              tspan {"x": "894", "y": "5193.84"}
+              tspan {"x": "894", "y": "5217.84"}
+            text {"id": "Организатор: ЧРУП «Промофреш», УНП 691757897.", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "letter-spacing": "0em"} TEXT Организатор: ЧРУП «Промофреш», УНП 691757897.
+              tspan {"x": "894", "y": "5251.84"}
+      g {"id": "Frame 1987300254"}
+        g {"id": "Heading 2 → Контакты_2"}
+          text {"fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "20", "font-weight": "600", "letter-spacing": "0em"} TEXT СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ КАРТУ GREENКАРТА 
+            tspan {"x": "220", "y": "5052.66"}
+            tspan {"x": "220", "y": "5078.66"}
+            tspan {"x": "220", "y": "5104.66"}
+            tspan {"x": "297.598", "y": "5104.66"}
+            tspan {"x": "436.914", "y": "5104.66"}
+          text {"fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "20", "font-weight": "600", "letter-spacing": "0em"} TEXT «»
+            tspan {"x": "286.211", "y": "5104.66"}
+            tspan {"x": "425.527", "y": "5104.66"}
+        g {"id": "Frame 1987300253"}
+          g {"id": "Frame 1987300252"}
+            rect {"id": "Link", "x": "220", "y": "5140.57", "width": "205", "height": "63.7778", "fill": "url(#pattern1_3745_11534)"}
+            rect {"id": "Link_2", "x": "220", "y": "5215.74", "width": "205", "height": "63.7778", "fill": "url(#pattern2_3745_11534)"}
+    g {"id": "победители"}
+      rect {"x": "654", "y": "4611", "width": "654", "height": "114", "rx": "57", "fill": "#18944C"}
+      rect {"x": "654", "y": "4611", "width": "654", "height": "114", "rx": "57", "stroke": "#FFE19B", "stroke-width": "6"}
+      g {"id": "Frame 1987300237"}
+        g {"id": "Frame 1987300239"}
+          path {"id": "Star 3", "fill": "#FFE19B"}
+          path {"id": "Star 1", "fill": "#FFE19B"}
+        text {"id": "ПОБЕДИТЕЛИ", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "60", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПОБЕДИТЕЛИ
+          tspan {"x": "780.107", "y": "4688.51"}
+        g {"id": "Frame 1987300238"}
+          path {"id": "Star 1_2", "fill": "#FFE19B"}
+          path {"id": "Star 3_2", "fill": "#FFE19B"}
+    g {"id": "блок вопросы"}
+      text {"id": "Heading 2 → Вопросы", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "60", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ВОПРОС-ОТВЕТ
+        tspan {"x": "730.909", "y": "3595.51"}
+      foreignObject {"x": "176", "y": "3596", "width": "1568", "height": "916"}
+        div {}
+      g {"id": "вопросы", "data-figma-bg-blur-radius": "44"}
+        rect {"x": "223", "y": "3643", "width": "1474", "height": "822", "rx": "27", "fill": "black", "fill-opacity": "0.2"}
+        rect {"x": "223", "y": "3643", "width": "1474", "height": "822", "rx": "27", "stroke": "#F7CD97", "stroke-width": "6"}
+        g {"id": "faq-question"}
+          foreignObject {"x": "246", "y": "3666", "width": "1428", "height": "123"}
+            div {}
+          g {"id": "Frame", "data-figma-bg-blur-radius": "4"}
+            rect {"x": "250.5", "y": "3670.5", "width": "1419", "height": "114", "rx": "19.5", "fill": "#18944C"}
+            rect {"x": "250.5", "y": "3670.5", "width": "1419", "height": "114", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_2"}
+              g {"id": "Frame_3"}
+                text {"id": "Кто может принять участие в рекламной игре?", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Кто может принять участие в рекламной игре?
+                  tspan {"x": "280", "y": "3717.93"}
+                g {"id": "CaretDown"}
+                  path {"id": "Vector_11", "fill": "white"}
+              text {"id": "К участию в Рекламной игре приглашаются все граждане Республики Беларусь, а также иностранные граждане и лица без гражданства.", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "20", "font-weight": "500", "letter-spacing": "0em"} TEXT К участию в Рекламной игре приглашаются все граждане Республики Беларусь, а также иностранные граждане и лица без гражданства.
+                tspan {"x": "280", "y": "3754.66"}
+          g {"id": "Frame_4"}
+            rect {"x": "250.5", "y": "3800.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_5"}
+              text {"id": "Когда проходит Рекламная игра?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Когда проходит Рекламная игра?
+                tspan {"x": "280", "y": "3847.93"}
+              g {"id": "CaretDown_2"}
+                path {"id": "Vector_12", "fill": "#FFE19B"}
+          g {"id": "Frame_6"}
+            rect {"x": "250.5", "y": "3894.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_7"}
+              text {"id": "Как стать участником Рекламной игры?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Как стать участником Рекламной игры?
+                tspan {"x": "280", "y": "3941.93"}
+              g {"id": "CaretDown_3"}
+                path {"id": "Vector_13", "fill": "#FFE19B"}
+          g {"id": "Frame_8"}
+            rect {"x": "250.5", "y": "3988.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_9"}
+              text {"id": "Что делать, если игровые коды не начислены в Личном кабинете?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Что делать, если игровые коды не начислены в Личном кабинете?
+                tspan {"x": "280", "y": "4035.93"}
+              g {"id": "CaretDown_4"}
+                path {"id": "Vector_14", "fill": "#FFE19B"}
+          g {"id": "Frame_10"}
+            rect {"x": "250.5", "y": "4082.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_11"}
+              text {"id": "Какие товары необходимо приобрести для участия в Рекламной игре?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Какие товары необходимо приобрести для участия в Рекламной игре?
+                tspan {"x": "280", "y": "4129.93"}
+              g {"id": "CaretDown_5"}
+                path {"id": "Vector_15", "fill": "#FFE19B"}
+          g {"id": "Frame_12"}
+            rect {"x": "250.5", "y": "4176.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_13"}
+              text {"id": "Когда проходят розыгрыши призов?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Когда проходят розыгрыши призов?
+                tspan {"x": "280", "y": "4223.93"}
+              g {"id": "CaretDown_6"}
+                path {"id": "Vector_16", "fill": "#FFE19B"}
+          g {"id": "Frame_14"}
+            rect {"x": "250.5", "y": "4270.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_15"}
+              text {"id": "Как узнать о результатах розыгрыша?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Как узнать о результатах розыгрыша?
+                tspan {"x": "280", "y": "4317.93"}
+              g {"id": "CaretDown_7"}
+                path {"id": "Vector_17", "fill": "#FFE19B"}
+          g {"id": "Frame_16"}
+            rect {"x": "250.5", "y": "4364.5", "width": "1419", "height": "78", "rx": "19.5", "stroke": "#FFE19B"}
+            g {"id": "Frame_17"}
+              text {"id": "Где и когда можно получить приз?", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "22", "font-weight": "600", "letter-spacing": "0em"} TEXT Где и когда можно получить приз?
+                tspan {"x": "280", "y": "4411.93"}
+              g {"id": "CaretDown_8"}
+                path {"id": "Vector_18", "fill": "#FFE19B"}
+    g {"id": "главный экран", "clip-path": "url(#clip3_3745_11534)"}
+      rect {"width": "1920", "height": "1418", "transform": "translate(0 110)", "fill": "white"}
+      g {"id": "fom_gor 1"}
+        rect {"x": "-128", "y": "-173", "width": "2330", "height": "1703", "fill": "url(#pattern3_3745_11534)"}
+        rect {"x": "-128", "y": "-173", "width": "2330", "height": "1703", "fill": "url(#paint0_linear_3745_11534)"}
+      g {"id": "выиграй geely"}
+        g {"id": "и сотни других призов"}
+          g {"id": "Rectangle 3984"}
+            path {"fill": "#FEFEFE"}
+            path {"fill": "#175732"}
+          text {"id": "И СОТНИ ДРУГИХ ПРИЗОВ", "transform": "matrix(0.994523 -0.104522 0.104535 0.994521 229.525 628.551)", "fill": "#175732", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "38", "font-weight": "900", "letter-spacing": "0em"} TEXT И СОТНИ
+ДРУГИХ ПРИЗОВ
+            tspan {"x": "74.6548", "y": "32.9883"}
+            tspan {"x": "0.306137", "y": "72.9883"}
+        g {"id": "выиграй"}
+          g {"id": "Rectangle 3980", "filter": "url(#filter2_dd_3745_11534)"}
+            path {"fill": "url(#paint1_linear_3745_11534)"}
+          g {"id": "текст"}
+            g {"id": "выиграй_2"}
+              text {"id": "В", "transform": "matrix(0.987178 -0.159618 0.159639 0.987176 300.209 534.141)", "fill": "url(#paint2_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT В
+                tspan {"x": "0", "y": "26.0703"}
+              text {"id": "Ы", "transform": "matrix(0.990163 -0.139914 0.139933 0.990161 320.387 530.618)", "fill": "url(#paint3_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT Ы
+                tspan {"x": "0", "y": "26.0703"}
+              text {"id": "И", "transform": "matrix(0.992839 -0.119461 0.119477 0.992837 346.598 526.781)", "fill": "url(#paint4_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT И
+                tspan {"x": "0", "y": "26.0703"}
+              text {"id": "Г", "transform": "matrix(0.99474 -0.102435 0.102449 0.994738 368.84 524.098)", "fill": "url(#paint5_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT Г
+                tspan {"x": "0", "y": "26.0703"}
+              text {"id": "Р", "transform": "matrix(0.996289 -0.0860759 0.0860873 0.996287 386.145 522.358)", "fill": "url(#paint6_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT Р
+                tspan {"x": "0", "y": "26.0703"}
+              text {"id": "А", "transform": "matrix(0.997665 -0.0682984 0.0683074 0.997664 404.516 520.945)", "fill": "url(#paint7_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT А
+                tspan {"x": "0", "y": "26.0703"}
+              text {"id": "Й", "transform": "matrix(0.99876 -0.0498007 0.0498073 0.998758 425.922 519.708)", "fill": "url(#paint8_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT Й
+                tspan {"x": "0", "y": "26.0703"}
+            g {"id": "GEELY EX2"}
+              text {"id": "G", "transform": "matrix(0.983195 -0.182554 0.182687 0.983172 239.624 569.545)", "fill": "url(#paint9_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT G
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "E", "transform": "matrix(0.987025 -0.160563 0.160585 0.987023 278.856 562.28)", "fill": "url(#paint10_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT E
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "E_2", "transform": "matrix(0.990118 -0.140235 0.140253 0.990116 310.151 556.067)", "fill": "url(#paint11_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT E
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "L", "transform": "matrix(0.992756 -0.120147 0.120163 0.992754 342.747 552.452)", "fill": "url(#paint12_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT L
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "Y", "transform": "matrix(0.995077 -0.0991066 0.0991198 0.995075 368.302 548.267)", "fill": "url(#paint13_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT Y
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "E_3", "transform": "matrix(0.997763 -0.066863 0.0668718 0.997761 414.315 543.154)", "fill": "url(#paint14_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT E
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "X", "transform": "matrix(0.998968 -0.0454269 0.0454329 0.998967 446.229 542.177)", "fill": "url(#paint15_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT X
+                tspan {"x": "0", "y": "46.5898"}
+              text {"id": "2", "transform": "matrix(0.999714 -0.0239699 0.0239731 0.999711 483.472 540.182)", "fill": "url(#paint16_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "800", "letter-spacing": "0em"} TEXT 2
+                tspan {"x": "0", "y": "46.5898"}
+      rect {"id": "заголовок", "x": "521", "y": "212.877", "width": "878", "height": "317.954", "fill": "url(#pattern4_3745_11534)"}
+      text {"id": "20.11.2026 — 14.01.2027", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT 20.11.2026 — 14.01.2027
+        tspan {"x": "783.089", "y": "197.754"}
+      rect {"id": "машина 1", "x": "401", "y": "520", "width": "1054", "height": "413", "fill": "url(#pattern5_3745_11534)"}
+      rect {"id": "produkt 1", "x": "1189", "y": "602", "width": "561", "height": "457", "fill": "url(#pattern6_3745_11534)"}
+      g {"id": "снежинка 8"}
+        rect {"id": "снежинка 3 1", "x": "1739.21", "y": "301.242", "width": "50.5714", "height": "50.2472", "fill": "url(#pattern7_3745_11534)"}
+        rect {"id": "снежинка1 1", "x": "1735", "y": "298", "width": "59", "height": "56.7308", "fill": "url(#pattern8_3745_11534)"}
+      rect {"id": "снежинка луч 7", "x": "1612", "y": "121", "width": "116.821", "height": "112", "fill": "url(#pattern9_3745_11534)"}
+      g {"id": "снежинка 6"}
+        rect {"id": "снежинка 3 1_2", "x": "1436.71", "y": "209.396", "width": "68.5714", "height": "68.1319", "fill": "url(#pattern10_3745_11534)"}
+        rect {"id": "снежинка1 1_2", "x": "1431", "y": "205", "width": "80", "height": "76.9231", "fill": "url(#pattern11_3745_11534)"}
+      rect {"id": "снежинка луч 5", "x": "1258", "y": "147", "width": "47", "height": "45.0603", "fill": "url(#pattern12_3745_11534)"}
+      rect {"id": "снежинка луч 4", "x": "715", "y": "222", "width": "47", "height": "45.0603", "fill": "url(#pattern13_3745_11534)"}
+      g {"id": "снежинка 3"}
+        rect {"id": "снежинка 3 1_3", "x": "486.714", "y": "153.396", "width": "68.5714", "height": "68.1319", "fill": "url(#pattern14_3745_11534)"}
+        rect {"id": "снежинка1 1_3", "x": "481", "y": "149", "width": "80", "height": "76.9231", "fill": "url(#pattern15_3745_11534)"}
+      g {"id": "снежинка 2"}
+        rect {"id": "снежинка 3 1_4", "x": "333.214", "y": "304.242", "width": "50.5714", "height": "50.2472", "fill": "url(#pattern16_3745_11534)"}
+        rect {"id": "снежинка1 1_4", "x": "329", "y": "301", "width": "59", "height": "56.7308", "fill": "url(#pattern17_3745_11534)"}
+      rect {"id": "снежинка луч 1", "x": "147", "y": "121", "width": "107.434", "height": "103", "fill": "url(#pattern18_3745_11534)"}
+      g {"id": "правила участия в игре"}
+        text {"id": "ПРАВИЛА УЧАСТИЯ В РЕКЛАМНОЙ ИГРЕ", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "60", "font-weight": "bold", "letter-spacing": "0em"} TEXT ПРАВИЛА УЧАСТИЯ В РЕКЛАМНОЙ ИГРЕ
+          tspan {"x": "373.74", "y": "1105.66"}
+        g {"id": "Frame 1987300270"}
+          rect {"x": "225", "y": "1151", "width": "1470", "height": "310", "rx": "35", "fill": "white"}
+          rect {"x": "225", "y": "1151", "width": "1470", "height": "310", "rx": "35", "stroke": "url(#paint17_linear_3745_11534)", "stroke-width": "10"}
+          g {"id": "правила"}
+            g {"id": "правила_2"}
+              g {"id": "правила 1"}
+                g {"id": "номер"}
+                  path {"id": "Ellipse 17", "fill": "#0B4F26", "stroke-width": "5", "stroke": "url(#paint18_linear_3745_11534)"}
+                  text {"id": "1", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "70", "font-weight": "bold", "letter-spacing": "0em"} TEXT 1
+                    tspan {"x": "319.586", "y": "1260.18"}
+                g {"id": "Frame 1987300269"}
+                  text {"id": "ПОДТВЕРДИ", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПОДТВЕРДИ
+                    tspan {"x": "420", "y": "1240.59"}
+                  text {"id": "согласие на участие в рекламной игре в личном кабинете", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "letter-spacing": "0em"} TEXT согласие на участие 
+в рекламной игре
+в личном кабинете
+                    tspan {"x": "420", "y": "1286.25"}
+                    tspan {"x": "420", "y": "1316.25"}
+                    tspan {"x": "420", "y": "1346.25"}
+              g {"id": "правила 2"}
+                g {"id": "номер_2"}
+                  path {"id": "Ellipse 17_2", "fill": "#0B4F26", "stroke-width": "5", "stroke": "url(#paint19_linear_3745_11534)"}
+                  text {"id": "2_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "70", "font-weight": "bold", "letter-spacing": "0em"} TEXT 2
+                    tspan {"x": "880.586", "y": "1259.18"}
+                g {"id": "Frame 1987300269_2"}
+                  text {"id": "купи", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT КУПИ
+                    tspan {"x": "979", "y": "1240.59"}
+                  text {"id": "игровые товары", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "letter-spacing": "0em"} TEXT игровые
+товары
+                    tspan {"x": "979", "y": "1286.25"}
+                    tspan {"x": "979", "y": "1316.25"}
+              g {"id": "правила 3"}
+                g {"id": "номер_3"}
+                  path {"id": "Ellipse 17_3", "fill": "#0B4F26", "stroke-width": "5", "stroke": "url(#paint20_linear_3745_11534)"}
+                  text {"id": "3", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "70", "font-weight": "bold", "letter-spacing": "0em"} TEXT 3
+                    tspan {"x": "1265.59", "y": "1260.18"}
+                g {"id": "Frame 1987300269_3"}
+                  text {"id": "участвуй", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "50", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT УЧАСТВУЙ
+                    tspan {"x": "1365", "y": "1240.59"}
+                  text {"id": "в розыгрыше призов", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "letter-spacing": "0em"} TEXT в розыгрыше
+призов
+                    tspan {"x": "1365", "y": "1286.25"}
+                    tspan {"x": "1365", "y": "1316.25"}
+                  text {"id": "полные правила", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "font-weight": "bold", "letter-spacing": "0.01em", "text-decoration": "underline"} TEXT ПОЛНЫЕ ПРАВИЛА
+                    tspan {"x": "1365.19", "y": "1347.84"}
+            g {"id": "текст_2"}
+              rect {"x": "290", "y": "1372", "width": "1340", "height": "54", "rx": "10", "fill": "url(#paint21_linear_3745_11534)"}
+              text {"id": "1 игровой код за каждые 2 рубля стоимости игровых товаров в чеке", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "34", "font-weight": "bold", "letter-spacing": "0em"} TEXT 1 игровой код за каждые 2 рубля стоимости игровых товаров в чеке
+                tspan {"x": "401.5", "y": "1410.62"}
+    g {"id": "БЛОК ИГРОВЫЕ ТОВАРЫ"}
+      g {"id": "arrow"}
+        g {"id": "стрелка влево"}
+          path {"id": "Vector 11", "stroke-width": "2", "stroke": "#FFE19B"}
+        g {"id": "стрелка вправо"}
+          path {"id": "Vector 11_2", "stroke-width": "2", "stroke": "#FFE19B"}
+      g {"id": "ИГРОВЫЕ ТОВАРЫ"}
+        text {"id": "Heading 2 → Вопросы_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "60", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ИГРОВЫЕ ТОВАРЫ
+          tspan {"x": "685.954", "y": "2881.51"}
+        g {"id": "игровые товары_2", "clip-path": "url(#clip4_3745_11534)"}
+          g {"id": "MILKA"}
+            path {"id": "Rectangle 3982", "fill": "white", "stroke-width": "3.10256", "stroke": "#FFE19B"}
+            g {"id": "Group 1987300244"}
+              path {"id": "Rectangle 3983", "fill": "url(#paint22_linear_3745_11534)"}
+            text {"id": "Продукция «Milka» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7863", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция 
+«Milka»
+в ассортименте  
+              tspan {"x": "383.473", "y": "3317.65"}
+              tspan {"x": "412.95", "y": "3343.65"}
+              tspan {"x": "358.188", "y": "3369.65"}
+            rect {"id": "товар милка", "x": "284", "y": "3038.21", "width": "351.484", "height": "241.483", "fill": "url(#pattern19_3745_11534)"}
+            rect {"id": "лого милка", "x": "378.969", "y": "2947.61", "width": "161.548", "height": "78.5983", "fill": "url(#pattern20_3745_11534)"}
+          g {"id": "alpen gold"}
+            path {"id": "Rectangle 3982_2", "fill": "white", "stroke-width": "3.10198", "stroke": "#FFE19B"}
+            g {"id": "Group 1987300244_2"}
+              path {"id": "Rectangle 3983_2", "fill": "url(#paint23_linear_3745_11534)"}
+            text {"id": "Продукция «Alpen Gold» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7818", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция 
+«Alpen Gold»
+в ассортименте  
+              tspan {"x": "883.487", "y": "3317.65"}
+              tspan {"x": "877.658", "y": "3343.65"}
+              tspan {"x": "858.207", "y": "3369.65"}
+            rect {"id": "image 65", "x": "798.453", "y": "3052.17", "width": "322.581", "height": "232.175", "fill": "url(#pattern21_3745_11534)"}
+            rect {"id": "лого альпенгольд", "x": "914.021", "y": "2943.45", "width": "92.0108", "height": "92.9355", "fill": "url(#pattern22_3745_11534)"}
+          g {"id": "барни"}
+            path {"id": "Rectangle 3982_3", "fill": "white", "stroke-width": "3.09819", "stroke": "#FFE19B"}
+            g {"id": "Group 1987300244_3"}
+              path {"id": "Rectangle 3983_3", "fill": "url(#paint24_linear_3745_11534)"}
+            text {"id": "Продукция «Медвежонок Барни» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7528", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция 
+«Медвежонок Барни»
+в ассортименте  
+              tspan {"x": "1383.58", "y": "3317.63"}
+              tspan {"x": "1318.02", "y": "3343.63"}
+              tspan {"x": "1358.33", "y": "3369.63"}
+            rect {"id": "image 65_2", "x": "1283.32", "y": "3051.24", "width": "353.879", "height": "229.892", "fill": "url(#pattern23_3745_11534)"}
+            rect {"id": "image 67", "x": "1380.96", "y": "2935.6", "width": "157.566", "height": "103.839", "fill": "url(#pattern24_3745_11534)"}
+    g {"id": "блок призы"}
+      g {"id": "Frame 1948754331"}
+        text {"id": "заголовок Призы", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "60", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПРИЗЫ
+          tspan {"x": "852.628", "y": "1710.66"}
+        g {"id": "Frame 1987300276"}
+          g {"id": "главный приз"}
+            g {"id": "главный приз_2"}
+              rect {"id": "fom_vert 1", "x": "223", "y": "1754", "width": "1474", "height": "519", "rx": "37", "fill": "url(#pattern25_3745_11534)", "stroke": "#FFE19B", "stroke-width": "6"}
+              rect {"id": "машина 1_2", "x": "450", "y": "1810", "width": "1150", "height": "451", "fill": "url(#pattern26_3745_11534)"}
+              g {"id": "плашки"}
+                g {"id": "выиграй_3"}
+                  g {"id": "Rectangle 3980_2", "filter": "url(#filter3_dd_3745_11534)"}
+                    path {"fill": "url(#paint25_linear_3745_11534)"}
+                  g {"id": "текст_3"}
+                    g {"id": "выиграй_4"}
+                      text {"id": "В_2", "transform": "translate(424.592 1907.54) rotate(-8.18532)", "fill": "url(#paint26_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT В
+                        tspan {"x": "0", "y": "20.477"}
+                      text {"id": "Ы_2", "transform": "translate(440.609 1905.03) rotate(-7.04342)", "fill": "url(#paint27_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT Ы
+                        tspan {"x": "0", "y": "20.477"}
+                      text {"id": "И_2", "transform": "translate(461.406 1902.36) rotate(-5.86144)", "fill": "url(#paint28_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT И
+                        tspan {"x": "0", "y": "20.477"}
+                      text {"id": "Г_2", "transform": "translate(479.043 1900.54) rotate(-4.8798)", "fill": "url(#paint29_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT Г
+                        tspan {"x": "0", "y": "20.477"}
+                      text {"id": "Р_2", "transform": "translate(492.754 1899.4) rotate(-3.93823)", "fill": "url(#paint30_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT Р
+                        tspan {"x": "0", "y": "20.477"}
+                      text {"id": "А_2", "transform": "translate(507.312 1898.54) rotate(-2.91652)", "fill": "url(#paint31_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT А
+                        tspan {"x": "0", "y": "20.477"}
+                      text {"id": "Й_2", "transform": "translate(524.268 1897.85) rotate(-1.85474)", "fill": "url(#paint32_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "21.8757", "font-weight": "bold", "letter-spacing": "0em"} TEXT Й
+                        tspan {"x": "0", "y": "20.477"}
+                    g {"id": "GEELY EX2_2"}
+                      text {"id": "G_2", "transform": "translate(376.176 1934.72) rotate(-9.52244)", "fill": "url(#paint33_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT G
+                        tspan {"x": "0", "y": "36.3519"}
+                      text {"id": "E_4", "transform": "translate(407.318 1929.51) rotate(-8.24022)", "fill": "url(#paint34_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT E
+                        tspan {"x": "0", "y": "36.3518"}
+                      text {"id": "E_5", "transform": "translate(432.172 1925.03) rotate(-7.06195)", "fill": "url(#paint35_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT E
+                        tspan {"x": "0", "y": "36.3519"}
+                      text {"id": "L_2", "transform": "translate(458.014 1922.62) rotate(-5.90102)", "fill": "url(#paint36_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT L
+                        tspan {"x": "0", "y": "36.3519"}
+                      text {"id": "Y_2", "transform": "translate(478.293 1919.66) rotate(-4.68811)", "fill": "url(#paint37_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT Y
+                        tspan {"x": "0", "y": "36.3519"}
+                      text {"id": "E_6", "transform": "translate(514.775 1916.25) rotate(-2.83408)", "fill": "url(#paint38_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT E
+                        tspan {"x": "0", "y": "36.3519"}
+                      text {"id": "X_2", "transform": "translate(540.043 1915.92) rotate(-1.60384)", "fill": "url(#paint39_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT X
+                        tspan {"x": "0", "y": "36.3519"}
+                      text {"id": "2_3", "transform": "translate(569.543 1914.85) rotate(-0.373595)", "fill": "url(#paint40_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "39.0637", "font-weight": "800", "letter-spacing": "0em"} TEXT 2
+                        tspan {"x": "0", "y": "36.3519"}
+                g {"id": "ГЛАВНЫЙ ПРИЗ"}
+                  rect {"x": "340.007", "y": "1834.45", "width": "269", "height": "60", "rx": "30", "transform": "rotate(-5 340.007 1834.45)", "fill": "#18944C"}
+                  rect {"x": "340.007", "y": "1834.45", "width": "269", "height": "60", "rx": "30", "transform": "rotate(-5 340.007 1834.45)", "stroke": "url(#paint41_linear_3745_11534)", "stroke-width": "4"}
+                  g {"id": "ГЛАВНЫЙ ПРИЗ_2", "filter": "url(#filter4_d_3745_11534)"}
+                    text {"transform": "translate(380.552 1838.93) rotate(-5)", "fill": "url(#paint42_linear_3745_11534)", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "24", "font-weight": "800", "letter-spacing": "0.01em"} TEXT ГЛАВНЫЙ ПРИЗ
+                      tspan {"x": "0.3675", "y": "30.2031"}
+          g {"id": "карточки призы", "clip-path": "url(#clip5_3745_11534)"}
+            g {"id": "карточка товара 1"}
+              g {"id": "Mask group"}
+                mask {"id": "mask0_3745_11534", "maskUnits": "userSpaceOnUse", "x": "220", "y": "2296", "width": "480", "height": "400"}
+                  path {"id": "Rectangle 3981", "fill": "white", "stroke-width": "3", "stroke": "#FFE19B"}
+                g {"mask": "url(#mask0_3745_11534)"}
+                  path {"id": "fom_vert 2", "fill": "white", "stroke-width": "6", "stroke": "#FFE19B"}
+              g {"id": "ПРИЗ"}
+                rect {"x": "235", "y": "2316", "width": "450", "height": "62", "rx": "31", "fill": "#18944C"}
+                rect {"x": "235", "y": "2316", "width": "450", "height": "62", "rx": "31", "stroke": "url(#paint43_linear_3745_11534)", "stroke-width": "3"}
+                g {"id": "подарочный набор «Milka»", "filter": "url(#filter5_d_3745_11534)"}
+                  text {"transform": "translate(272 2332)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "25", "font-weight": "800", "letter-spacing": "0em"} TEXT ПОДАРОЧНЫЙ НАБОР «MILKA» 
+                    tspan {"x": "0.29248", "y": "23.5449"}
+              g {"id": "приз"}
+                g {"id": "тень", "opacity": "0.3", "filter": "url(#filter6_f_3745_11534)"}
+                  rect {"x": "322", "y": "2387.33", "width": "217.389", "height": "298.224", "transform": "rotate(-7.46092 322 2387.33)", "fill": "url(#pattern27_3745_11534)"}
+                rect {"id": "Milka_Boot 1", "x": "327.633", "y": "2381.23", "width": "217.389", "height": "298.224", "transform": "rotate(-7.46092 327.633 2381.23)", "fill": "url(#pattern28_3745_11534)"}
+              g {"id": "номер_4"}
+                path {"id": "Ellipse 17_4", "fill": "#0B4F26", "stroke-width": "3", "stroke": "url(#paint44_linear_3745_11534)"}
+                g {"id": "Frame 1987300272"}
+                  text {"id": "х", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "font-weight": "500", "letter-spacing": "0em"} TEXT х
+                    tspan {"x": "575", "y": "2637.72"}
+                  text {"id": "300", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "font-weight": "500", "letter-spacing": "0em"} TEXT 300
+                    tspan {"x": "586", "y": "2641.33"}
+              rect {"id": "снежинка2 2", "x": "553", "y": "2586", "width": "43.8079", "height": "42", "fill": "url(#pattern29_3745_11534)"}
+              rect {"id": "снежинка2 1", "x": "423", "y": "2348", "width": "57.3675", "height": "55", "fill": "url(#pattern30_3745_11534)"}
+            g {"id": "карточка товара 2"}
+              g {"id": "Mask group_2"}
+                mask {"id": "mask1_3745_11534", "maskUnits": "userSpaceOnUse", "x": "720", "y": "2296", "width": "480", "height": "400"}
+                  path {"id": "Rectangle 3981_2", "fill": "white", "stroke-width": "6", "stroke": "#FFE19B"}
+                g {"mask": "url(#mask1_3745_11534)"}
+                  path {"id": "fom_vert 2_2", "fill": "white", "stroke-width": "6", "stroke": "#FFE19B"}
+              g {"id": "ПРИЗ_2"}
+                rect {"x": "735", "y": "2316", "width": "450", "height": "62", "rx": "31", "fill": "#18944C"}
+                rect {"x": "735", "y": "2316", "width": "450", "height": "62", "rx": "31", "stroke": "url(#paint45_linear_3745_11534)", "stroke-width": "3"}
+                g {"id": "сертификат магазина «Green»", "filter": "url(#filter7_d_3745_11534)"}
+                  text {"transform": "translate(751.5 2332)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "25", "font-weight": "800", "letter-spacing": "0em"} TEXT СЕРТИФИКАТ МАГАЗИНА «GREEN» 
+                    tspan {"x": "0.370117", "y": "23.5449"}
+              g {"id": "приз_2"}
+                g {"id": "тень_2", "opacity": "0.3", "filter": "url(#filter8_f_3745_11534)"}
+                  rect {"x": "766", "y": "2409.25", "width": "355.233", "height": "228.665", "rx": "21.3033", "transform": "rotate(-5 766 2409.25)", "fill": "url(#pattern31_3745_11534)"}
+                rect {"id": "сертификат 100 рублей", "x": "771.189", "y": "2400.96", "width": "355.233", "height": "228.665", "rx": "21.3033", "transform": "rotate(-5 771.189 2400.96)", "fill": "url(#pattern32_3745_11534)"}
+              g {"id": "номер_5"}
+                path {"id": "Ellipse 17_5", "fill": "#0B4F26", "stroke-width": "3", "stroke": "url(#paint46_linear_3745_11534)"}
+                g {"id": "Frame 1987300272_2"}
+                  text {"id": "х_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "font-weight": "500", "letter-spacing": "0em"} TEXT х
+                    tspan {"x": "1107", "y": "2637.72"}
+                  text {"id": "40", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "font-weight": "500", "letter-spacing": "0em"} TEXT 40
+                    tspan {"x": "1118", "y": "2641.33"}
+              rect {"id": "снежинка2 2_2", "x": "1084", "y": "2579", "width": "43.8079", "height": "42", "fill": "url(#pattern33_3745_11534)"}
+              rect {"id": "снежинка2 1_2", "x": "1084", "y": "2348", "width": "57.3675", "height": "55", "fill": "url(#pattern34_3745_11534)"}
+            g {"id": "карточка товара 3"}
+              g {"id": "Mask group_3"}
+                mask {"id": "mask2_3745_11534", "maskUnits": "userSpaceOnUse", "x": "1220", "y": "2296", "width": "480", "height": "400"}
+                  path {"id": "Rectangle 3981_3", "fill": "white", "stroke-width": "6", "stroke": "#FFE19B"}
+                g {"mask": "url(#mask2_3745_11534)"}
+                  path {"id": "fom_vert 2_3", "fill": "white", "stroke-width": "6", "stroke": "#FFE19B"}
+              g {"id": "ПРИЗ_3"}
+                rect {"x": "1235", "y": "2316", "width": "450", "height": "62", "rx": "31", "fill": "#18944C"}
+                rect {"x": "1235", "y": "2316", "width": "450", "height": "62", "rx": "31", "stroke": "url(#paint47_linear_3745_11534)", "stroke-width": "3"}
+                g {"id": "сертификат магазина «Green»_2", "filter": "url(#filter9_d_3745_11534)"}
+                  text {"transform": "translate(1251.5 2332)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "25", "font-weight": "800", "letter-spacing": "0em"} TEXT СЕРТИФИКАТ МАГАЗИНА «GREEN» 
+                    tspan {"x": "0.370117", "y": "23.5449"}
+              g {"id": "приз_3"}
+                g {"id": "приз_4"}
+                  g {"id": "тень_3", "opacity": "0.3", "filter": "url(#filter10_f_3745_11534)"}
+                    rect {"x": "1266.38", "y": "2408.76", "width": "360.394", "height": "232.236", "rx": "21.4201", "transform": "rotate(-5 1266.38 2408.76)", "fill": "url(#pattern35_3745_11534)"}
+                  rect {"id": "image 40", "x": "1271.83", "y": "2402.82", "width": "360.394", "height": "231.207", "rx": "21.4201", "transform": "rotate(-5 1271.83 2402.82)", "fill": "url(#pattern36_3745_11534)"}
+              g {"id": "номер_6"}
+                path {"id": "Ellipse 17_6", "fill": "#0B4F26", "stroke-width": "3", "stroke": "url(#paint48_linear_3745_11534)"}
+                g {"id": "Frame 1987300272_3"}
+                  text {"id": "х_3", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "20", "font-weight": "500", "letter-spacing": "0em"} TEXT х
+                    tspan {"x": "1607", "y": "2637.72"}
+                  text {"id": "64", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "30", "font-weight": "500", "letter-spacing": "0em"} TEXT 64
+                    tspan {"x": "1618", "y": "2641.33"}
+              rect {"id": "снежинка2 2_3", "x": "1584", "y": "2579", "width": "43.8079", "height": "42", "fill": "url(#pattern37_3745_11534)"}
+              rect {"id": "снежинка2 1_3", "x": "1584", "y": "2348", "width": "57.3675", "height": "55", "fill": "url(#pattern38_3745_11534)"}
+      g {"id": "arrow_2"}
+        g {"id": "стрелка влево_2"}
+          path {"id": "Vector 11_3", "stroke-width": "2", "stroke": "#FFE19B"}
+        g {"id": "стрелка вправо_2"}
+          path {"id": "Vector 11_4", "stroke-width": "2", "stroke": "#FFE19B"}
+    g {"id": "снежинки слева"}
+      g {"id": "снежинка 6_2"}
+        rect {"id": "снежинка 3 1_5", "width": "60", "height": "59.6154", "transform": "matrix(-1 0 0 1 204 1566.85)", "fill": "url(#pattern39_3745_11534)"}
+        rect {"id": "снежинка1 1_5", "width": "70", "height": "67.3077", "transform": "matrix(-1 0 0 1 209 1563)", "fill": "url(#pattern40_3745_11534)"}
+      g {"id": "снежинка 8_2"}
+        rect {"id": "снежинка 3 1_6", "width": "50.5714", "height": "50.2472", "transform": "matrix(-1 0 0 1 79.7861 1717.24)", "fill": "url(#pattern41_3745_11534)"}
+        rect {"id": "снежинка1 1_6", "width": "59", "height": "56.7308", "transform": "matrix(-1 0 0 1 84 1714)", "fill": "url(#pattern42_3745_11534)"}
+      g {"id": "снежинка 9"}
+        rect {"id": "снежинка 3 1_7", "width": "34.2857", "height": "34.0659", "transform": "matrix(-1 0 0 1 132.143 1890.2)", "fill": "url(#pattern43_3745_11534)"}
+        rect {"id": "снежинка1 1_7", "width": "40", "height": "38.4615", "transform": "matrix(-1 0 0 1 135 1888)", "fill": "url(#pattern44_3745_11534)"}
+    g {"id": "снежинки справа"}
+      g {"id": "снежинка 6_3"}
+        rect {"id": "снежинка 3 1_8", "x": "1716", "y": "1566.85", "width": "60", "height": "59.6154", "fill": "url(#pattern45_3745_11534)"}
+        rect {"id": "снежинка1 1_8", "x": "1711", "y": "1563", "width": "70", "height": "67.3077", "fill": "url(#pattern46_3745_11534)"}
+      g {"id": "снежинка 8_3"}
+        rect {"id": "снежинка 3 1_9", "x": "1840.21", "y": "1717.24", "width": "50.5714", "height": "50.2472", "fill": "url(#pattern47_3745_11534)"}
+        rect {"id": "снежинка1 1_9", "x": "1836", "y": "1714", "width": "59", "height": "56.7308", "fill": "url(#pattern48_3745_11534)"}
+      g {"id": "снежинка 9_2"}
+        rect {"id": "снежинка 3 1_10", "x": "1787.86", "y": "1890.2", "width": "34.2857", "height": "34.0659", "fill": "url(#pattern49_3745_11534)"}
+        rect {"id": "снежинка1 1_10", "x": "1785", "y": "1888", "width": "40", "height": "38.4615", "fill": "url(#pattern50_3745_11534)"}
+    g {"id": "header", "filter": "url(#filter11_d_3745_11534)"}
+      rect {"width": "1920", "height": "110", "fill": "#19643B"}
+      g {"id": "Frame 1987300268"}
+        g {"id": "logo_2"}
+          g {"id": "_2319763457504_2"}
+            path {"id": "Vector_19", "fill": "#333333"}
+            path {"id": "Vector_20", "fill": "#FECF1B"}
+            path {"id": "Vector_21", "fill": "#E42725"}
+            path {"id": "Vector_22", "fill": "#333333"}
+            path {"id": "Vector_23", "fill-rule": "evenodd", "clip-rule": "evenodd", "fill": "#FEFEFE"}
+            path {"id": "Vector_24", "fill-rule": "evenodd", "clip-rule": "evenodd", "fill": "#FEFEFE"}
+            path {"id": "Vector_25", "fill-rule": "evenodd", "clip-rule": "evenodd", "fill": "#FEFEFE"}
+            path {"id": "Vector_26", "fill": "#FEFEFE"}
+            path {"id": "Vector_27", "fill": "#FEFEFE"}
+            path {"id": "Vector_28", "fill": "#FEFEFE"}
+        g {"id": "Frame 1948754328"}
+          g {"id": "menu"}
+            text {"id": "правила_3", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПРАВИЛА 
+              tspan {"x": "604", "y": "60.4688"}
+            text {"id": "призы", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПРИЗЫ
+              tspan {"x": "750", "y": "60.4688"}
+            text {"id": "игровые товары_3", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ИГРОВЫЕ ТОВАРЫ
+              tspan {"x": "878", "y": "60.4688"}
+            text {"id": "вопрос-ответ", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ВОПРОС-ОТВЕТ
+              tspan {"x": "1095", "y": "60.4688"}
+            text {"id": "ПОБЕДИТЕЛИ_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПОБЕДИТЕЛИ
+              tspan {"x": "1288", "y": "60.4688"}
+          g {"id": "button"}
+            rect {"x": "1485", "y": "33", "width": "214", "height": "44", "rx": "22", "stroke": "#FFE19B", "stroke-width": "2"}
+            g {"id": "profile"}
+              path {"id": "Vector_29", "stroke-width": "1.5", "stroke-linecap": "round", "stroke-linejoin": "round", "stroke": "#FFE19B"}
+              path {"id": "Vector_30", "stroke-width": "1.5", "stroke-linecap": "round", "stroke-linejoin": "round", "stroke": "#FFE19B"}
+            text {"id": "Личный кабинет", "fill": "#FFE19B", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ЛИЧНЫЙ КАБИНЕТ
+              tspan {"x": "1530.5", "y": "60.4688"}

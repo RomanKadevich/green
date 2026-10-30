@@ -1,0 +1,15 @@
+node_modules/
+dist/
+design/artwork/
+design/fonts/
+public/design-inspect/
+public/__qa.html
+qa.html
+design/exports/
+design/normalized/
+design/source/
+design/qa/
+*.log
+.env
+.env.*
+!.env.example
