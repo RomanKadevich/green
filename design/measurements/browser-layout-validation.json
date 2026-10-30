@@ -1,0 +1,197 @@
+[
+  {
+    "kind": "desktop",
+    "failedImages": [],
+    "height": 5419,
+    "scrollWidth": 1920,
+    "sections": [
+      {
+        "height": 110,
+        "name": "site-header",
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "height": 1418,
+        "name": "hero",
+        "width": 1920,
+        "x": 0,
+        "y": 110
+      },
+      {
+        "height": 1170,
+        "name": "prizes-section",
+        "width": 1920,
+        "x": 0,
+        "y": 1528
+      },
+      {
+        "height": 714,
+        "name": "products-section",
+        "width": 1920,
+        "x": 0,
+        "y": 2698
+      },
+      {
+        "height": 1080,
+        "name": "faq-section",
+        "width": 1920,
+        "x": 0,
+        "y": 3412
+      },
+      {
+        "height": 828,
+        "name": "faq-list",
+        "width": 1480,
+        "x": 220,
+        "y": 3640
+      },
+      {
+        "height": 356,
+        "name": "winners-section",
+        "width": 1920,
+        "x": 0,
+        "y": 4492
+      },
+      {
+        "height": 571,
+        "name": "site-footer",
+        "width": 1920,
+        "x": 0,
+        "y": 4848
+      }
+    ],
+    "width": 1920
+  },
+  {
+    "kind": "tablet",
+    "failedImages": [],
+    "height": 4589,
+    "scrollWidth": 1024,
+    "sections": [
+      {
+        "height": 100,
+        "name": "site-header",
+        "width": 1024,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "height": 1016,
+        "name": "hero",
+        "width": 1024,
+        "x": 0,
+        "y": 100
+      },
+      {
+        "height": 982,
+        "name": "prizes-section",
+        "width": 1024,
+        "x": 0,
+        "y": 1116
+      },
+      {
+        "height": 691,
+        "name": "products-section",
+        "width": 1024,
+        "x": 0,
+        "y": 2098
+      },
+      {
+        "height": 1000,
+        "name": "faq-section",
+        "width": 1024,
+        "x": 0,
+        "y": 2789
+      },
+      {
+        "height": 833,
+        "name": "faq-list",
+        "width": 974,
+        "x": 15,
+        "y": 2949
+      },
+      {
+        "height": 248,
+        "name": "winners-section",
+        "width": 1024,
+        "x": 0,
+        "y": 3789
+      },
+      {
+        "height": 552,
+        "name": "site-footer",
+        "width": 1024,
+        "x": 0,
+        "y": 4037
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "kind": "mobile",
+    "failedImages": [],
+    "height": 4639,
+    "scrollWidth": 430,
+    "sections": [
+      {
+        "height": 100,
+        "name": "site-header",
+        "width": 430,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "height": 971,
+        "name": "hero",
+        "width": 430,
+        "x": 0,
+        "y": 100
+      },
+      {
+        "height": 846,
+        "name": "prizes-section",
+        "width": 430,
+        "x": 0,
+        "y": 1071
+      },
+      {
+        "height": 650,
+        "name": "products-section",
+        "width": 430,
+        "x": 0,
+        "y": 1917
+      },
+      {
+        "height": 936,
+        "name": "faq-section",
+        "width": 430,
+        "x": 0,
+        "y": 2567
+      },
+      {
+        "height": 828,
+        "name": "faq-list",
+        "width": 400,
+        "x": 15,
+        "y": 2643
+      },
+      {
+        "height": 198,
+        "name": "winners-section",
+        "width": 430,
+        "x": 0,
+        "y": 3503
+      },
+      {
+        "height": 938,
+        "name": "site-footer",
+        "width": 430,
+        "x": 0,
+        "y": 3701
+      }
+    ],
+    "width": 430
+  }
+]

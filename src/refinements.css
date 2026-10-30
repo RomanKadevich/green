@@ -1,10 +1,13 @@
 /* Adjustments from the one-to-one reference comparison. */
-.layout-mobile .faq-question,
-.layout-tablet .faq-question {
-  font-weight: 500;
+@media (max-width: 767px) {
+  .landing .faq-question {
+    font-weight: 600;
+  }
 }
-.layout-tablet .faq-item:first-child .faq-question {
-  font-weight: 600;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .faq-item:first-child .faq-question {
+    font-weight: 600;
+  }
 }
 .modal-close {
   font-size: 14px;
@@ -16,6 +19,7 @@ html {
 .site-header {
   position: sticky;
   top: 0;
+  box-shadow: 0 calc(3 * var(--u)) calc(20 * var(--u)) #062d18;
 }
 .rules-anchor {
   position: absolute;
@@ -26,27 +30,10 @@ section[id],
 #rules {
   scroll-margin-top: calc(110 * var(--u));
 }
-.snow-particle {
-  animation-fill-mode: both;
-}
-@keyframes snowfall {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-    opacity: 0;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .hero-art {
+    height: calc(1026 * var(--u));
   }
-  12% {
-    opacity: 1;
-  }
-  68% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: translate(var(--drift), var(--fall)) rotate(80deg) scale(0.35);
-    opacity: 0;
-  }
-}
-.layout-tablet .hero-art {
-  height: calc(1026 * var(--u));
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -61,104 +48,154 @@ section[id],
   margin-top: 0;
   position: relative;
 }
-.layout-desktop .prize-count {
-  left: calc(387 * var(--u));
-  top: calc(320.076 * var(--u));
+@media (min-width: 1200px) {
+  .landing .prize-count {
+    left: calc(387 * var(--u));
+    top: calc(320.076 * var(--u));
+  }
 }
-.layout-desktop .prize-card--milka .prize-count {
-  left: calc(355 * var(--u));
+@media (min-width: 1200px) {
+  .landing .prize-card--milka .prize-count {
+    left: calc(355 * var(--u));
+  }
 }
-.layout-desktop .prize-count small {
-  top: calc(-3.61 * var(--u));
+@media (min-width: 1200px) {
+  .landing .prize-count small {
+    top: calc(-3.61 * var(--u));
+  }
 }
-.layout-desktop .prize-card h3 {
-  top: calc(38.5 * var(--u));
+@media (min-width: 1200px) {
+  .landing .prize-card h3 {
+    top: calc(38.5 * var(--u));
+  }
 }
-.layout-tablet .prize-count {
-  left: calc(385.406 * var(--u));
-  top: calc(312.677 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .prize-count {
+    left: calc(385.406 * var(--u));
+    top: calc(312.677 * var(--u));
+  }
 }
-.layout-tablet .prize-card--milka .prize-count {
-  left: calc(345 * var(--u));
-  top: calc(313.857 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .prize-card--milka .prize-count {
+    left: calc(345 * var(--u));
+    top: calc(313.857 * var(--u));
+  }
 }
-.layout-tablet .prize-count small {
-  top: calc(-1.34 * var(--u));
-  font-size: calc(20 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .prize-count small {
+    top: calc(-1.34 * var(--u));
+    font-size: calc(20 * var(--u));
+  }
 }
-.layout-tablet .prize-card h3 {
-  top: calc(36.28 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .prize-card h3 {
+    top: calc(36.28 * var(--u));
+  }
 }
-.layout-tablet .prize-card--milka h3 {
-  top: calc(38 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .prize-card--milka h3 {
+    top: calc(38 * var(--u));
+  }
 }
-.layout-mobile .prize-count,
-.layout-mobile .prize-card--milka .prize-count {
-  left: calc(301 * var(--u));
-  top: calc(269.12 * var(--u));
-  height: auto;
+@media (max-width: 767px) {
+  .landing .prize-count,
+  .landing .prize-card--milka .prize-count {
+    left: calc(301 * var(--u));
+    top: calc(269.12 * var(--u));
+    height: auto;
+  }
 }
-.layout-mobile .prize-count small {
-  top: calc(-0.42 * var(--u));
-  font-size: calc(20 * var(--u)) !important;
+@media (max-width: 767px) {
+  .landing .prize-count small {
+    top: calc(-0.42 * var(--u));
+    font-size: calc(20 * var(--u)) !important;
+  }
 }
-.layout-mobile .prize-card h3 {
-  top: calc(34 * var(--u));
+@media (max-width: 767px) {
+  .landing .prize-card h3 {
+    top: calc(34 * var(--u));
+  }
 }
-.layout-desktop .winners-button {
-  left: calc(50% + 21 * var(--u));
+@media (min-width: 1200px) {
+  .landing .winners-button {
+    left: calc(50% + 21 * var(--u));
+  }
 }
-.layout-mobile {
-  position: relative;
-  border-radius: calc(40 * var(--u));
+@media (max-width: 767px) {
+  .landing {
+    position: relative;
+    border-radius: calc(40 * var(--u));
+  }
 }
-.layout-mobile::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: calc(4 * var(--u)) solid #000;
-  border-radius: inherit;
-  pointer-events: none;
-  z-index: 50;
+@media (max-width: 767px) {
+  .landing::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: calc(4 * var(--u)) solid #000;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 50;
+  }
 }
-.layout-mobile .faq-list {
-  transform: translateY(calc(-1 * var(--u)));
+@media (max-width: 767px) {
+  .landing .faq-list {
+    transform: translateY(calc(-1 * var(--u)));
+  }
 }
-.layout-mobile .is-expanded .faq-question {
-  min-height: 0;
+@media (max-width: 767px) {
+  .landing .faq-item[open] .faq-question {
+    min-height: 0;
+  }
 }
-.layout-mobile .faq-answer {
-  padding-bottom: calc(15 * var(--u));
+@media (max-width: 767px) {
+  .landing .faq-answer {
+    padding-bottom: calc(15 * var(--u));
+  }
 }
-.layout-mobile .faq-question {
-  position: relative;
+@media (max-width: 767px) {
+  .landing .faq-question {
+    position: relative;
+  }
 }
-.layout-mobile .faq-question img {
-  position: absolute;
-  right: calc(21 * var(--u));
-  width: calc(17 * var(--u));
-  height: calc(11 * var(--u));
+@media (max-width: 767px) {
+  .landing .faq-question img {
+    position: absolute;
+    right: calc(21 * var(--u));
+    width: calc(17 * var(--u));
+    height: calc(11 * var(--u));
+  }
 }
-.layout-desktop .is-expanded .faq-question {
-  min-height: calc(63 * var(--u));
+@media (min-width: 1200px) {
+  .landing .faq-item[open] .faq-question {
+    min-height: calc(63 * var(--u));
+  }
 }
-.layout-desktop .faq-list {
-  padding-bottom: calc(19 * var(--u));
+@media (min-width: 1200px) {
+  .landing .faq-list {
+    padding-bottom: calc(19 * var(--u));
+  }
 }
-.layout-tablet .faq-list {
-  margin-top: calc(160 * var(--u)) !important;
-  border-width: calc(4 * var(--u));
-  padding: calc(16 * var(--u));
-  transform: translateX(calc(-10 * var(--u)));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .faq-list {
+    margin-top: calc(160 * var(--u)) !important;
+    border-width: calc(4 * var(--u));
+    padding: calc(16 * var(--u));
+    transform: translateX(calc(-10 * var(--u)));
+  }
 }
-.layout-tablet .faq-question,
-.layout-tablet .faq-answer {
-  padding-inline: calc(29 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .faq-question,
+  .landing .faq-answer {
+    padding-inline: calc(29 * var(--u));
+  }
 }
-.layout-tablet .is-expanded .faq-question {
-  min-height: calc(64 * var(--u));
-  padding-top: calc(21.5 * var(--u));
-  padding-bottom: calc(8.5 * var(--u));
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .faq-item[open] .faq-question {
+    min-height: calc(64 * var(--u));
+    padding-top: calc(21.5 * var(--u));
+    padding-bottom: calc(8.5 * var(--u));
+  }
 }
 .menu-toggle > img {
   width: calc(28 * var(--u));

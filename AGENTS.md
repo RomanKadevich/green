@@ -5,7 +5,9 @@
 - Work in `C:\Work\GlobalProg\2026-Рома-ПромИгры\green`; remote is `https://github.com/RomanKadevich/green.git`.
 - Match the supplied Figma file `xyQjX9MoJGpxK1UVIACjQ3`. Desktop: `3745:11534` (1920 × 5419), tablet: `3797:16623` (1024 × 4589), mobile: `3831:4012` (430 × 4639).
 - Fidelity of every dimension, margin, image crop and font is a priority. Compare the implementation with the supplied references at their native widths.
-- Preserve different dates and copy between the three original layouts until the user explicitly asks to reconcile them.
+- The campaign starts on **20.11.2026** at every breakpoint (user update). Preserve the other differing source dates/copy until the user changes them.
+- Stack: semantic HTML, CSS and vanilla JavaScript for interactions. React and other UI frameworks are excluded. Vite is a development/build tool only; the production output must be static HTML/CSS/JS.
+- Use the storyboard's measured linear transitions: 5003 ms introduction and 12107 ms loop; no invented snowflake rotation or shrinking. Source measurements are recorded in `design/measurements/`.
 - Use original Figma artwork. Every served raster asset must be WebP encoded losslessly. Preserve original vectors for logos and small icons.
 - Gold snowflakes must fall and fade/melt in the hero and in the prizes block. Respect reduced-motion preferences. `?motion=off` freezes the reference positions for visual QA.
 - Keep local previews and do not deploy a hosted Site without a request. Cabinet, official rules, legal documents and store destinations need organizer-provided URLs; do not invent authentication or claim that placeholder documents are official.

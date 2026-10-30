@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>GREEN — Сладкий сезон больших подарков</title>
     <meta
       name="description"
@@ -10,7 +10,1114 @@
     />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="landing">
+      <header class="site-header">
+        <a class="header-logo" href="#top" aria-label="GREEN — на главную"
+          ><img src="/assets/desktop-logo.svg" alt="Green"
+        /></a>
+        <nav
+          class="navigation"
+          id="main-navigation"
+          aria-label="Основная навигация"
+        >
+          <a href="#rules">Правила</a><a href="#prizes">Призы</a
+          ><a href="#products">Игровые товары</a><a href="#faq">Вопрос-ответ</a
+          ><a href="#winners">Победители</a
+          ><button
+            type="button"
+            class="account-link mobile-only"
+            data-dialog="account-dialog"
+          >
+            Личный кабинет
+          </button>
+        </nav>
+        <button
+          type="button"
+          class="account-link desktop-account"
+          data-dialog="account-dialog"
+        >
+          <img src="/assets/desktop-profile.svg" alt="" />Личный кабинет</button
+        ><button
+          type="button"
+          class="menu-toggle"
+          aria-label="Открыть меню"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          <img src="/assets/mobile-menu.svg" alt="" />
+        </button>
+      </header>
+      <main id="top">
+        <section class="hero" aria-labelledby="campaign-title">
+          <h1 id="campaign-title" class="sr-only">
+            Сладкий сезон больших подарков — рекламная игра GREEN
+          </h1>
+          <picture class="hero-art"
+            ><source
+              media="(max-width: 767px)"
+              srcset="/assets/mobile-hero.webp" />
+            <source
+              media="(max-width: 1199px)"
+              srcset="/assets/tablet-hero.webp" />
+            <img
+              src="/assets/desktop-hero.webp"
+              alt="Выиграй GEELY EX2 и сотни других призов"
+          /></picture>
+          <div class="snow-layer" aria-hidden="true">
+            <div class="copy-desktop">
+              <img
+                src="/assets/desktop-snow-8.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 8"
+                data-area="hero"
+                style="
+                  left: calc(1735 * var(--u));
+                  top: calc(188 * var(--u));
+                  width: calc(59 * var(--u));
+                  height: calc(56.7308 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-sparkle.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка луч 7"
+                data-area="hero"
+                style="
+                  left: calc(1612 * var(--u));
+                  top: calc(11 * var(--u));
+                  width: calc(116.821 * var(--u));
+                  height: calc(112 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-6.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 6"
+                data-area="hero"
+                style="
+                  left: calc(1431 * var(--u));
+                  top: calc(95 * var(--u));
+                  width: calc(80 * var(--u));
+                  height: calc(76.9231 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-sparkle.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка луч 5"
+                data-area="hero"
+                style="
+                  left: calc(1258 * var(--u));
+                  top: calc(37 * var(--u));
+                  width: calc(47 * var(--u));
+                  height: calc(45.0603 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-sparkle.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка луч 4"
+                data-area="hero"
+                style="
+                  left: calc(715 * var(--u));
+                  top: calc(112 * var(--u));
+                  width: calc(47 * var(--u));
+                  height: calc(45.0603 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-3.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 3"
+                data-area="hero"
+                style="
+                  left: calc(481 * var(--u));
+                  top: calc(39 * var(--u));
+                  width: calc(80 * var(--u));
+                  height: calc(76.9231 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-2.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 2"
+                data-area="hero"
+                style="
+                  left: calc(329 * var(--u));
+                  top: calc(191 * var(--u));
+                  width: calc(59 * var(--u));
+                  height: calc(56.7308 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-sparkle.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка луч 1"
+                data-area="hero"
+                style="
+                  left: calc(147 * var(--u));
+                  top: calc(11 * var(--u));
+                  width: calc(107.434 * var(--u));
+                  height: calc(103 * var(--u));
+                "
+              />
+            </div>
+            <div class="copy-tablet"></div>
+            <div class="copy-mobile"></div>
+          </div>
+          <div class="copy-desktop">
+            <span
+              class="original-copy"
+              style="left:calc(783.089 * var(--u));top:calc(62.5001 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:bold;color:white;letter-spacing:0.01em"
+              >20.11.2026 — 14.01.2027</span
+            >
+          </div>
+          <div class="copy-tablet">
+            <span
+              class="original-copy"
+              style="left:calc(335.089 * var(--u));top:calc(62.5001 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:bold;color:white;letter-spacing:0.01em"
+              >20.11.2026 — 10.01.2027</span
+            >
+          </div>
+          <div class="copy-mobile">
+            <span
+              class="original-copy"
+              style="left:calc(73.0709 * var(--u));top:calc(61.9999 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(24 * var(--u));font-weight:bold;color:white;letter-spacing:0.01em"
+              >20.11.2026 — 10.01.2027</span
+            >
+          </div>
+          <span id="rules" class="rules-anchor"></span>
+          <div class="rules-copy">
+            <picture class="rules-art"
+              ><source
+                media="(max-width: 767px)"
+                srcset="/assets/mobile-rules.svg" />
+              <source
+                media="(max-width: 1199px)"
+                srcset="/assets/tablet-rules.svg" />
+              <img src="/assets/desktop-rules.svg" alt=""
+            /></picture>
+            <div class="copy-desktop">
+              <span
+                class="original-copy"
+                style="left:calc(373.74 * var(--u));top:calc(945.152 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(60 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >ПРАВИЛА УЧАСТИЯ В РЕКЛАМНОЙ ИГРЕ</span
+              ><span
+                class="original-copy"
+                style="left:calc(319.586 * var(--u));top:calc(1091.25 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(70 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >1</span
+              ><span
+                class="original-copy"
+                style="left:calc(420 * var(--u));top:calc(1088.5 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(50 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >ПОДТВЕРДИ</span
+              ><span
+                class="original-copy"
+                style="left:calc(420 * var(--u));top:calc(1151 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >согласие на участие </span
+              ><span
+                class="original-copy"
+                style="left:calc(420 * var(--u));top:calc(1181 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в рекламной игре</span
+              ><span
+                class="original-copy"
+                style="left:calc(420 * var(--u));top:calc(1211 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в личном кабинете</span
+              ><span
+                class="original-copy"
+                style="left:calc(880.586 * var(--u));top:calc(1090.25 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(70 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >2</span
+              ><span
+                class="original-copy"
+                style="left:calc(979 * var(--u));top:calc(1088.5 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(50 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >КУПИ</span
+              ><span
+                class="original-copy"
+                style="left:calc(979 * var(--u));top:calc(1151 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >игровые</span
+              ><span
+                class="original-copy"
+                style="left:calc(979 * var(--u));top:calc(1181 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >товары</span
+              ><span
+                class="original-copy"
+                style="left:calc(1265.59 * var(--u));top:calc(1091.25 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(70 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >3</span
+              ><span
+                class="original-copy"
+                style="left:calc(1365 * var(--u));top:calc(1088.5 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(50 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >УЧАСТВУЙ</span
+              ><span
+                class="original-copy"
+                style="left:calc(1365 * var(--u));top:calc(1151 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в розыгрыше</span
+              ><span
+                class="original-copy"
+                style="left:calc(1365 * var(--u));top:calc(1181 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >призов</span
+              ><button
+                class="original-copy"
+                style="left:calc(1365.19 * var(--u));top:calc(1221 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em;text-decoration:underline"
+                type="button"
+                data-dialog="rules-dialog"
+              >
+                ПОЛНЫЕ ПРАВИЛА</button
+              ><span
+                class="original-copy"
+                style="left:calc(401.5 * var(--u));top:calc(1272 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(34 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >1 игровой код за каждые 2 рубля стоимости игровых товаров в
+                чеке</span
+              >
+            </div>
+            <div class="copy-tablet">
+              <span
+                class="original-copy"
+                style="left:calc(121.16 * var(--u));top:calc(677.766 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(40 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >ПРАВИЛА УЧАСТИЯ В РЕКЛАМНОЙ ИГРЕ</span
+              ><span
+                class="original-copy"
+                style="left:calc(82.668 * var(--u));top:calc(780.297 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(40 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >1</span
+              ><span
+                class="original-copy"
+                style="left:calc(145 * var(--u));top:calc(776.5 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(34 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >ПОДТВЕРДИ</span
+              ><span
+                class="original-copy"
+                style="left:calc(145 * var(--u));top:calc(818 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >согласие на участие </span
+              ><span
+                class="original-copy"
+                style="left:calc(145 * var(--u));top:calc(840 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в рекламной игре</span
+              ><span
+                class="original-copy"
+                style="left:calc(145 * var(--u));top:calc(862 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в личном кабинете</span
+              ><span
+                class="original-copy"
+                style="left:calc(457.262 * var(--u));top:calc(779.628 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(40 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >2</span
+              ><span
+                class="original-copy"
+                style="left:calc(519 * var(--u));top:calc(776.5 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(34 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >КУПИ</span
+              ><span
+                class="original-copy"
+                style="left:calc(519 * var(--u));top:calc(818 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >игровые</span
+              ><span
+                class="original-copy"
+                style="left:calc(519 * var(--u));top:calc(840 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >товары</span
+              ><span
+                class="original-copy"
+                style="left:calc(708.285 * var(--u));top:calc(779.73 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(40 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >3</span
+              ><span
+                class="original-copy"
+                style="left:calc(770 * var(--u));top:calc(776.5 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(34 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >УЧАСТВУЙ</span
+              ><span
+                class="original-copy"
+                style="left:calc(770 * var(--u));top:calc(818 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в розыгрыше</span
+              ><span
+                class="original-copy"
+                style="left:calc(770 * var(--u));top:calc(840 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >призов</span
+              ><button
+                class="original-copy"
+                style="left:calc(770.186 * var(--u));top:calc(872 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em;text-decoration:underline"
+                type="button"
+                data-dialog="rules-dialog"
+              >
+                ПОЛНЫЕ ПРАВИЛА</button
+              ><span
+                class="original-copy"
+                style="left:calc(148.5 * var(--u));top:calc(920 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(22 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >1 игровой код за каждые 2 рубля стоимости игровых товаров в
+                чеке</span
+              >
+            </div>
+            <div class="copy-mobile">
+              <span
+                class="original-copy"
+                style="left:calc(78.8008 * var(--u));top:calc(506.336 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(28 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >ПРАВИЛА УЧАСТИЯ </span
+              ><span
+                class="original-copy"
+                style="left:calc(77.6113 * var(--u));top:calc(537.336 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(28 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >В РЕКЛАМНОЙ ИГРЕ</span
+              ><span
+                class="original-copy"
+                style="left:calc(49.9053 * var(--u));top:calc(609.739 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >1</span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(610 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(24 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >ПОДТВЕРДИ</span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(639 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >согласие на участие в рекламной </span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(657 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >игре в личном кабинете</span
+              ><span
+                class="original-copy"
+                style="left:calc(50.3301 * var(--u));top:calc(695.262 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >2</span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(696 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(24 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >КУПИ</span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(725 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >игровые товары</span
+              ><span
+                class="original-copy"
+                style="left:calc(50.3467 * var(--u));top:calc(763.335 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:bold;color:white;letter-spacing:0em"
+                >3</span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(764 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(24 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em"
+                >УЧАСТВУЙ</span
+              ><span
+                class="original-copy"
+                style="left:calc(99 * var(--u));top:calc(793 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:#162B19;letter-spacing:0em"
+                >в розыгрыше призов</span
+              ><button
+                class="original-copy"
+                style="left:calc(99.4677 * var(--u));top:calc(827 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0.01em;text-decoration:underline"
+                type="button"
+                data-dialog="rules-dialog"
+              >
+                ПОЛНЫЕ ПРАВИЛА</button
+              ><span
+                class="original-copy"
+                style="left:calc(70.7471 * var(--u));top:calc(873 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >1 игровой код за каждые 2 рубля </span
+              ><span
+                class="original-copy"
+                style="left:calc(63.8213 * var(--u));top:calc(890.998 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:bold;color:#0B4F26;letter-spacing:0em"
+                >стоимости игровых товаров в чеке</span
+              >
+            </div>
+          </div>
+        </section>
+        <section
+          class="prizes-section"
+          id="prizes"
+          aria-labelledby="prizes-title"
+        >
+          <div class="snow-layer snow-layer--prizes" aria-hidden="true">
+            <div class="copy-desktop">
+              <img
+                src="/assets/desktop-snow-3.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 3"
+                data-area="prizes"
+                style="
+                  left: calc(31 * var(--u));
+                  top: calc(37 * var(--u));
+                  width: calc(80 * var(--u));
+                  height: calc(77 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-2.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 2"
+                data-area="prizes"
+                style="
+                  left: calc(25 * var(--u));
+                  top: calc(209 * var(--u));
+                  width: calc(55 * var(--u));
+                  height: calc(53 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-8.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 8"
+                data-area="prizes"
+                style="
+                  left: calc(101 * var(--u));
+                  top: calc(369 * var(--u));
+                  width: calc(42 * var(--u));
+                  height: calc(40 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-6.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 6"
+                data-area="prizes"
+                style="
+                  left: calc(1711 * var(--u));
+                  top: calc(37 * var(--u));
+                  width: calc(80 * var(--u));
+                  height: calc(77 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-3.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 3"
+                data-area="prizes"
+                style="
+                  left: calc(1838 * var(--u));
+                  top: calc(209 * var(--u));
+                  width: calc(55 * var(--u));
+                  height: calc(53 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-2.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 2"
+                data-area="prizes"
+                style="
+                  left: calc(1782 * var(--u));
+                  top: calc(369 * var(--u));
+                  width: calc(42 * var(--u));
+                  height: calc(40 * var(--u));
+                "
+              />
+            </div>
+            <div class="copy-tablet">
+              <img
+                src="/assets/desktop-snow-3.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 3"
+                data-area="prizes"
+                style="
+                  left: calc(10 * var(--u));
+                  top: calc(40 * var(--u));
+                  width: calc(28 * var(--u));
+                  height: calc(27 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-2.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 2"
+                data-area="prizes"
+                style="
+                  left: calc(980 * var(--u));
+                  top: calc(82 * var(--u));
+                  width: calc(34 * var(--u));
+                  height: calc(33 * var(--u));
+                "
+              />
+            </div>
+            <div class="copy-mobile">
+              <img
+                src="/assets/desktop-snow-3.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 3"
+                data-area="prizes"
+                style="
+                  left: calc(10 * var(--u));
+                  top: calc(40 * var(--u));
+                  width: calc(28 * var(--u));
+                  height: calc(27 * var(--u));
+                "
+              /><img
+                src="/assets/desktop-snow-2.webp"
+                alt=""
+                class="snow-particle"
+                data-motion-key="снежинка 2"
+                data-area="prizes"
+                style="
+                  left: calc(386 * var(--u));
+                  top: calc(82 * var(--u));
+                  width: calc(34 * var(--u));
+                  height: calc(33 * var(--u));
+                "
+              />
+            </div>
+          </div>
+          <h2 id="prizes-title" class="section-heading">ПРИЗЫ</h2>
+          <picture class="grand-prize"
+            ><source
+              media="(max-width: 767px)"
+              srcset="/assets/mobile-grand-prize.webp" />
+            <source
+              media="(max-width: 1199px)"
+              srcset="/assets/tablet-grand-prize.webp" />
+            <img
+              src="/assets/desktop-grand-prize.webp"
+              alt="Главный приз — автомобиль GEELY EX2"
+          /></picture>
+          <div
+            class="carousel prize-carousel"
+            aria-roledescription="карусель"
+            aria-label="Призы"
+          >
+            <div class="card-track" aria-live="polite">
+              <article class="prize-card prize-card--milka" data-card>
+                <picture class=""
+                  ><source
+                    media="(max-width: 767px)"
+                    srcset="/assets/mobile-prize-milka.webp" />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="/assets/tablet-prize-milka.webp" />
+                  <img
+                    src="/assets/desktop-prize-milka.webp"
+                    alt="Подарочный набор Milka"
+                /></picture>
+                <h3>ПОДАРОЧНЫЙ НАБОР «MILKA»</h3>
+                <span class="prize-count"><small>х</small>300</span>
+              </article>
+              <article class="prize-card prize-card--100" data-card>
+                <picture
+                  ><source
+                    media="(min-width:768px) and (max-width:1199px)"
+                    srcset="/assets/tablet-prize-100.webp" />
+                  <img
+                    src="/assets/desktop-prize-100.webp"
+                    alt="Сертификат GREEN на 100 рублей"
+                /></picture>
+                <h3>СЕРТИФИКАТ МАГАЗИНА «GREEN»</h3>
+                <span class="prize-count"><small>х</small>40</span>
+              </article>
+              <article class="prize-card prize-card--50" data-card>
+                <img
+                  src="/assets/desktop-prize-50.webp"
+                  alt="Сертификат GREEN на 50 рублей"
+                />
+                <h3>СЕРТИФИКАТ МАГАЗИНА «GREEN»</h3>
+                <span class="prize-count"><small>х</small>64</span>
+              </article>
+            </div>
+            <button
+              type="button"
+              class="carousel-arrow carousel-arrow--prev"
+              data-carousel-direction="-1"
+              aria-label="Предыдущие призы"
+            >
+              <img src="/assets/desktop-arrow.svg" alt="" /></button
+            ><button
+              type="button"
+              class="carousel-arrow carousel-arrow--next"
+              data-carousel-direction="1"
+              aria-label="Следующие призы"
+            >
+              <img src="/assets/desktop-arrow.svg" alt="" />
+            </button>
+          </div>
+        </section>
+        <section
+          class="products-section"
+          id="products"
+          aria-labelledby="products-title"
+        >
+          <h2 id="products-title" class="section-heading">ИГРОВЫЕ ТОВАРЫ</h2>
+          <div
+            class="carousel product-carousel"
+            aria-roledescription="карусель"
+            aria-label="Игровые товары"
+          >
+            <div class="card-track" aria-live="polite">
+              <article class="product-card" data-card>
+                <picture class=""
+                  ><source
+                    media="(max-width: 767px)"
+                    srcset="/assets/mobile-product-milka.webp" />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="/assets/tablet-product-milka.webp" />
+                  <img
+                    src="/assets/desktop-product-milka.webp"
+                    alt="Игровые товары Milka"
+                /></picture>
+                <h3>Продукция<br />«Milka»<br />в ассортименте</h3>
+              </article>
+              <article class="product-card" data-card>
+                <picture
+                  ><source
+                    media="(min-width:768px) and (max-width:1199px)"
+                    srcset="/assets/tablet-product-alpen.webp" />
+                  <img
+                    src="/assets/desktop-product-alpen.webp"
+                    alt="Игровые товары Alpen Gold"
+                /></picture>
+                <h3>Продукция<br />«Alpen Gold»<br />в ассортименте</h3>
+              </article>
+              <article class="product-card" data-card>
+                <img
+                  src="/assets/desktop-product-barni.webp"
+                  alt="Игровые товары Медвежонок Барни"
+                />
+                <h3>Продукция<br />«Медвежонок Барни»<br />в ассортименте</h3>
+              </article>
+            </div>
+            <button
+              type="button"
+              class="carousel-arrow carousel-arrow--prev"
+              data-carousel-direction="-1"
+              aria-label="Предыдущие товары"
+            >
+              <img src="/assets/desktop-arrow.svg" alt="" /></button
+            ><button
+              type="button"
+              class="carousel-arrow carousel-arrow--next"
+              data-carousel-direction="1"
+              aria-label="Следующие товары"
+            >
+              <img src="/assets/desktop-arrow.svg" alt="" />
+            </button>
+          </div>
+        </section>
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title" class="section-heading">ВОПРОС-ОТВЕТ</h2>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary class="faq-question">
+                <span>Кто может принять участие в рекламной игре?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                К участию в Рекламной игре приглашаются все граждане Республики
+                Беларусь, а также иностранные граждане и лица без гражданства.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Когда проходит Рекламная игра?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                Начало рекламной игры — 20 ноября 2026 года.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Как стать участником Рекламной игры?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                Подтвердите согласие на участие в личном кабинете, покупайте
+                игровые товары с картой «GREENКАРТА» и участвуйте в розыгрыше.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span
+                  >Что делать, если игровые коды не начислены в Личном
+                  кабинете?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                Обратитесь на горячую линию: +375 (29) 658 50 50.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span
+                  >Какие товары необходимо приобрести для участия в Рекламной
+                  игре?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                В игре участвует продукция Milka, Alpen Gold и «Медвежонок
+                Барни», представленная в разделе «Игровые товары».
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Когда проходят розыгрыши призов?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                Информация о датах розыгрышей будет опубликована организатором.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Как узнать о результатах розыгрыша?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                Результаты будут опубликованы в разделе «Победители».
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Где и когда можно получить приз?</span
+                ><img src="/assets/desktop-caret.svg" alt="" />
+              </summary>
+              <div class="faq-answer">
+                Порядок получения призов уточняйте на горячей линии: +375 (29)
+                658 50 50.
+              </div>
+            </details>
+          </div>
+        </section>
+        <section class="winners-section" id="winners">
+          <button
+            type="button"
+            class="winners-button"
+            data-dialog="winners-dialog"
+          >
+            <img src="/assets/desktop-winner-stars.svg" alt="" /><span
+              >ПОБЕДИТЕЛИ</span
+            ><img src="/assets/desktop-winner-stars.svg" alt="" />
+          </button>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <img src="/assets/desktop-logo.svg" alt="Green" class="footer-logo" />
+        <div class="copy-desktop">
+          <button
+            class="original-copy"
+            style="left:calc(220 * var(--u));top:calc(511.996 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Положение о конфиденциальности</button
+          ><button
+            class="original-copy"
+            style="left:calc(923 * var(--u));top:calc(511.996 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Условия использования</button
+          ><button
+            class="original-copy"
+            style="left:calc(1529 * var(--u));top:calc(511.996 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(18 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Политика cookie</button
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(78.4961 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >Горячая линия:</span
+          ><a
+            class="original-copy"
+            style="left:calc(1158 * var(--u));top:calc(78.4961 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(30 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            href="tel:+375296585050"
+            >+375 (29) 658 50 50</a
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(139.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >с 10:00 до 17:00 в будние дни (понедельник- пятница), за
+            исключением выходных </span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(163.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >и праздничных дней, установленных и объявленных нерабочими в
+            порядке, </span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(187.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >предусмотренном законодательством;</span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(241.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Для участия в рекламной игре обязательно наличие карты </span
+          ><span
+            class="original-copy"
+            style="left:calc(1457.95 * var(--u));top:calc(241.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:bold;color:#FEFEFE;letter-spacing:0em"
+            >«GREENКАРТА».</span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(295.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:#FEFEFE;letter-spacing:0em"
+            >Рекламная игра «Сладкий сезон больших подарков». </span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(329.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Сроки проведения рекламной игры: С 20 ноября 2026 года по 18 марта
+            2027 года </span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(353.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >(включая период розыгрыша и вручения призов). </span
+          ><span
+            class="original-copy"
+            style="left:calc(894 * var(--u));top:calc(387.004 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Организатор: ЧРУП «Промофреш», УНП 691757897.</span
+          ><span
+            class="original-copy"
+            style="left:calc(220 * var(--u));top:calc(187 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ </span
+          ><span
+            class="original-copy"
+            style="left:calc(220 * var(--u));top:calc(213 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ </span
+          ><span
+            class="original-copy"
+            style="left:calc(220 * var(--u));top:calc(239 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >КАРТУ </span
+          ><span
+            class="original-copy"
+            style="left:calc(297.598 * var(--u));top:calc(239 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >GREENКАРТА</span
+          ><span
+            class="original-copy"
+            style="left:calc(436.914 * var(--u));top:calc(239 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+          >
+          </span
+          ><span
+            class="original-copy"
+            style="left:calc(286.211 * var(--u));top:calc(239 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >«</span
+          ><span
+            class="original-copy"
+            style="left:calc(425.527 * var(--u));top:calc(239 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >»</span
+          >
+        </div>
+        <div class="copy-tablet">
+          <button
+            class="original-copy"
+            style="left:calc(83.5 * var(--u));top:calc(504.002 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Положение о конфиденциальности</button
+          ><button
+            class="original-copy"
+            style="left:calc(492.5 * var(--u));top:calc(504.002 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Условия использования</button
+          ><button
+            class="original-copy"
+            style="left:calc(815.5 * var(--u));top:calc(504.002 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Политика cookie</button
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(90.5033 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(26 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >Горячая линия:</span
+          ><a
+            class="original-copy"
+            style="left:calc(626 * var(--u));top:calc(91.4969 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(24 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            href="tel:+375296585050"
+            >+375 (29) 658 50 50</a
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(148.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >с 10:00 до 17:00 в будние дни (понедельник- пятница), за
+            исключением </span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(167.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >выходных и праздничных дней, установленных и объявленных </span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(186.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >нерабочими в порядке, предусмотренном законодательством;</span
+          ><span
+            class="original-copy"
+            style="left:calc(876.156 * var(--u));top:calc(235.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:bold;color:#FEFEFE;letter-spacing:0em"
+            >«GREENКАРТА».</span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(235.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Для участия в рекламной игре обязательно наличие карты </span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(284.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:#FEFEFE;letter-spacing:0em"
+            >Рекламная игра «Сладкий сезон больших подарков». </span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(313.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Сроки проведения рекламной игры: С 20 ноября 2026 года по 80 марта </span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(332.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >2027 года (включая период розыгрыша и вручения призов). </span
+          ><span
+            class="original-copy"
+            style="left:calc(425 * var(--u));top:calc(361.501 * var(--u));font-family:&#x27;Roboto Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Организатор: ЧРУП «Промофреш», УНП 691757897.</span
+          ><span
+            class="original-copy"
+            style="left:calc(25 * var(--u));top:calc(186.462 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ </span
+          ><span
+            class="original-copy"
+            style="left:calc(25 * var(--u));top:calc(207.462 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ </span
+          ><span
+            class="original-copy"
+            style="left:calc(25 * var(--u));top:calc(228.462 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >КАРТУ «GREENКАРТА»
+          </span>
+        </div>
+        <div class="copy-mobile">
+          <button
+            class="original-copy"
+            style="left:calc(97 * var(--u));top:calc(782.998 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(14 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Положение о конфиденциальности</button
+          ><button
+            class="original-copy"
+            style="left:calc(135 * var(--u));top:calc(822.998 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(14 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Условия использования</button
+          ><button
+            class="original-copy"
+            style="left:calc(160 * var(--u));top:calc(862.998 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(14 * var(--u));font-weight:400;color:white;letter-spacing:0em"
+            type="button"
+            data-dialog="legal-dialog"
+          >
+            Политика cookie</button
+          ><span
+            class="original-copy"
+            style="left:calc(40.5 * var(--u));top:calc(398.5 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >Горячая линия:</span
+          ><a
+            class="original-copy"
+            style="left:calc(200.5 * var(--u));top:calc(398.5 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(20 * var(--u));font-weight:600;color:#DBDBDB;letter-spacing:0em"
+            href="tel:+375296585050"
+            >+375 (29) 658 50 50</a
+          ><span
+            class="original-copy"
+            style="left:calc(20.7031 * var(--u));top:calc(453.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >с 10:00 до 17:00 в будние дни (понедельник- пятница), </span
+          ><span
+            class="original-copy"
+            style="left:calc(44.1919 * var(--u));top:calc(471.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >за исключением выходных и праздничных дней, </span
+          ><span
+            class="original-copy"
+            style="left:calc(20.769 * var(--u));top:calc(489.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >установленных и объявленных нерабочими в порядке, </span
+          ><span
+            class="original-copy"
+            style="left:calc(73.4302 * var(--u));top:calc(507.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >предусмотренном законодательством;</span
+          ><span
+            class="original-copy"
+            style="left:calc(27.5366 * var(--u));top:calc(545.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Для участия в рекламной игре обязательно наличие </span
+          ><span
+            class="original-copy"
+            style="left:calc(132.566 * var(--u));top:calc(563.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >карты </span
+          ><span
+            class="original-copy"
+            style="left:calc(177.874 * var(--u));top:calc(563.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:bold;color:#FEFEFE;letter-spacing:0em"
+            >«GREENКАРТА».</span
+          ><span
+            class="original-copy"
+            style="left:calc(19.2676 * var(--u));top:calc(601.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:600;color:#FEFEFE;letter-spacing:0em"
+            >Рекламная игра </span
+          ><span
+            class="original-copy"
+            style="left:calc(139.561 * var(--u));top:calc(601.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:600;color:#FEFEFE;letter-spacing:0em"
+            >«Сладкий сезон больших подарков». </span
+          ><span
+            class="original-copy"
+            style="left:calc(84.7461 * var(--u));top:calc(629.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Сроки проведения рекламной игры: </span
+          ><span
+            class="original-copy"
+            style="left:calc(58.6426 * var(--u));top:calc(647.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >c 20 ноября 2026 года по 8 марта 2027 года </span
+          ><span
+            class="original-copy"
+            style="left:calc(39.0942 * var(--u));top:calc(665.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >(включая период розыгрыша и вручения призов). </span
+          ><span
+            class="original-copy"
+            style="left:calc(34.1797 * var(--u));top:calc(693.495 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(15 * var(--u));font-weight:400;color:#FEFEFE;letter-spacing:0em"
+            >Организатор: ЧРУП «Промофреш», УНП 691757897.</span
+          ><span
+            class="original-copy"
+            style="left:calc(95.9375 * var(--u));top:calc(168.502 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ </span
+          ><span
+            class="original-copy"
+            style="left:calc(93.5547 * var(--u));top:calc(189.502 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ </span
+          ><span
+            class="original-copy"
+            style="left:calc(143.078 * var(--u));top:calc(210.502 * var(--u));font-family:&#x27;Manrope Variable&#x27;,sans-serif;font-size:calc(16 * var(--u));font-weight:600;color:white;letter-spacing:0em"
+            >КАРТУ «ВЫГОДА!»
+          </span>
+        </div>
+        <div class="store-badges">
+          <a
+            href="https://apps.apple.com/search?term=GREEN"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Найти приложение GREEN в App Store"
+            ><img
+              src="/assets/desktop-app-store.webp"
+              alt="Download on the App Store" /></a
+          ><a
+            href="https://play.google.com/store/search?q=GREEN&amp;c=apps"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Найти приложение GREEN в Google Play"
+            ><img
+              src="/assets/desktop-google-play.webp"
+              alt="Download on Google Play"
+          /></a>
+        </div>
+      </footer>
+      <dialog id="account-dialog" class="modal" aria-labelledby="account-title">
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-close-dialog>
+            Закрыть
+          </button>
+          <h2 id="account-title">Личный кабинет</h2>
+          <p>Личный кабинет пока недоступен.</p>
+        </div>
+      </dialog>
+      <dialog id="winners-dialog" class="modal" aria-labelledby="winners-title">
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-close-dialog>
+            Закрыть
+          </button>
+          <h2 id="winners-title">Победители</h2>
+          <p>Результаты розыгрышей пока не опубликованы.</p>
+        </div>
+      </dialog>
+      <dialog id="rules-dialog" class="modal" aria-labelledby="rules-title">
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-close-dialog>
+            Закрыть
+          </button>
+          <h2 id="rules-title">Правила участия</h2>
+          <p>
+            Подтвердите согласие на участие в личном кабинете, приобретайте
+            игровые товары и участвуйте в розыгрыше призов. 1 игровой код за
+            каждые 2 рубля стоимости игровых товаров в чеке. Полное положение об
+            игре можно уточнить на горячей линии +375 (29) 658 50 50.
+          </p>
+        </div>
+      </dialog>
+      <dialog id="legal-dialog" class="modal" aria-labelledby="legal-title">
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-close-dialog>
+            Закрыть
+          </button>
+          <h2 id="legal-title">Документ</h2>
+          <p>Документ будет доступен после предоставления организатором.</p>
+        </div>
+      </dialog>
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

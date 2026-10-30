@@ -1,64 +1,70 @@
 # GREEN — visual QA
 
-final result: passed
+final result: pass
 
-## Reference and capture setup
+Current revision: semantic HTML, CSS and vanilla JavaScript. React has been removed from source and dependencies. Campaign start is **20.11.2026** at all breakpoints, per the user's latest instruction.
 
-Source of truth: Figma file `xyQjX9MoJGpxK1UVIACjQ3`, desktop `3745:11534`, tablet `3797:16623`, mobile `3831:4012`.
+## Source and comparison setup
 
-| Layout | Reference | Implementation | CSS viewport / compared pixels |
+Figma file `xyQjX9MoJGpxK1UVIACjQ3`: desktop `3745:11534`, tablet `3797:16623`, mobile `3831:4012`.
+
+| Layout | Reference | Current browser capture | Compared pixels |
 | --- | --- | --- | --- |
 | Desktop | `design/references/desktop.jpg` | `design/qa/desktop.jpg` | 1920 × 5419 |
 | Tablet | `design/references/tablet.jpg` | `design/qa/tablet.jpg` | 1024 × 4589 |
 | Mobile | `design/references/mobile.jpg` | `design/qa/mobile.jpg` | 430 × 4639 |
 
-Captures came from the in-app browser, using a same-origin iframe at each exact reference width. The surrounding browser viewport was wider for tablet/mobile; screenshots were cropped to the iframe's bounds without resizing. One CSS pixel corresponds to one pixel in the compared files. These are real browser renders, not screenshots generated from application code.
+Real in-app-browser renders were captured in same-origin iframes at the exact source widths. Only surrounding whitespace was cropped; content was not resized. State: `?motion=off`, first prize/product card, first FAQ open, menu closed. Side-by-side files under `design/qa/` place source on the left and implementation on the right. Captures and large working exports are local, intentionally excluded from Git.
 
-State: first prize/product slide, first FAQ item expanded, menu closed, `?motion=off`. Gold snowflakes are frozen at their starting positions for static comparison. The additional falling snow in the prizes block is an explicitly requested extension beyond the static mobile/tablet references.
+## Measured geometry and typography
 
-Full comparisons place source on the left and implementation on the right:
+All three source-sized pages have the intended height and no horizontal overflow. DOM measurements are recorded in `design/measurements/browser-layout-validation.json`.
 
-- `design/qa/desktop-comparison.jpg`
-- `design/qa/tablet-comparison.jpg`
-- `design/qa/mobile-comparison.jpg`
+| Surface | Desktop | Tablet | Mobile |
+| --- | --- | --- | --- |
+| Page height | 5419 | 4589 | 4639 |
+| Header height | 110 | 100 | 100 |
+| Hero height | 1418 | 1016 | 971 |
+| Prizes height | 1170 | 982 | 846 |
+| Products height | 714 | 691 | 650 |
+| FAQ panel x/y/width/height | 220 / 3640 / 1480 / 828 | 15 / 2949 / 974 / 833 | 15 / 2643 / 400 / 828 |
+| Footer y / height | 4848 / 571 | 4037 / 552 | 3701 / 938 |
 
-Focused comparisons: `desktop-rules-comparison.png`, `desktop-cards-comparison.png`, `tablet-rules-comparison.png`, `mobile-faq-comparison.png`, all under `design/qa/`. Local capture files are intentionally excluded from Git.
+The Figma browser inspector was used to verify header, hero, rules, prizes, products, FAQ, winners and footer dimensions. Evidence: `figma-blocks-ui.json`. The source header shadow is x=0, y=3, blur=20, spread=0, color `#062D18`; it is reproduced in CSS. Desktop winners retain their source 21 px center offset; tablet FAQ retains its 10 px left offset. The mobile source outline and radius are preserved.
 
-## Iteration history
+Digits 1/2/3 were selected individually in Figma: Roboto Bold 700, 70 px, 100% line-height, cap-height trim, 44.83 × 55.17 layer bounds. Step containers use 30 px internal gaps and widths 439 / 266 / 395. Inspector evidence is saved in `figma-steps-typography-ui.json` and `figma-steps-spacing-ui.json`. Source glyph baselines and line breaks were preserved rather than substituting the trimmed Figma layer box for a browser line box.
 
-1. **[P1, fixed] Incorrect font-family alias.** Fontsource exposes `Roboto Variable`, `Manrope Variable` and `Montserrat Variable`. Initial positioned copy used unregistered family names. Mapped source typography to the actual locally loaded families, then captured again.
-2. **[P2, fixed] Browser scrollbar reduced the usable frame width.** Hidden scrollbars preserve the full 1920/1024/430 CSS width without disabling scrolling. Final desktop/tablet/mobile images use the intended frame widths.
-3. **[P2, fixed] FAQ rows and panel offsets.** Matched the mobile panel to 828 px, corrected the expanded row padding and the tablet panel's 10 px horizontal offset. Tablet footer begins at y=4037; mobile at y=3701; desktop at y=4848.
-4. **[P2, fixed] Prize counts and labels.** Repositioned each count using its original exported baseline; used separate dimensions for Milka and the two certificates. See the final desktop card comparison.
-5. **[P2, fixed] Section and winners spacing.** Corrected section heights and the desktop winners button's 21 px horizontal offset. Matched tablet heading baselines and preserved the tablet hero's additional 10 px source background strip.
-6. **[P2, fixed] Reference mobile outline and menu icon.** Preserved the source 4 px outline/40 px radius and used the original exported menu icon. Mobile menu opening, closing and navigation were verified in the visible browser.
-7. **[P2, fixed] Preview did not consistently refresh edits on this Windows path.** Enabled polling for the development watcher, restarted the preview and confirmed updated computed styles before taking final captures.
+Artwork, card dimensions, counts, heading positions, FAQ padding, colors and footer copy were compared side by side at native sizes. Font families use the actual local Fontsource Variable names. FAQ weights follow the source; earlier optical weight overrides were removed. No actionable P0/P1/P2 visual discrepancy remains in the compared initial states.
 
-## Required fidelity surfaces
+## Motion
 
-- **Typography:** source font families, sizes, source baselines, line breaks and spacing are retained for positioned campaign/footer copy. HTML headings, labels, counts and FAQ match the compared layouts. The Roboto FAQ weight was optically adjusted to the supplied render; minor rasterization differences between Figma exports and the Windows browser remain P3.
-- **Spacing:** reference image dimensions, hero composition, rule box, card sizes, section positions, FAQ borders and footer positions were compared at 1:1. No remaining layout overflow was observed at the three reference widths.
-- **Colors/tokens:** background `#19643B`, footer `#134F2E`, gold `#FFE19B`, FAQ border `#F7CD97`, active FAQ/button `#18944C` are taken from the source. Artwork retains its original gradients and colors.
-- **Image quality:** original Figma raster/vector layers were used. All 24 served raster assets have a `VP8L` lossless WebP bitstream; there are no lossy `VP8 ` assets. Logos/icons use original exported SVG. No generated replacement artwork is used.
-- **Copy:** the user explicitly requested preserving differences between breakpoint dates/copy. This includes the inconsistent footer dates and mobile loyalty-card wording. Only the first FAQ answer is source copy; remaining answers and unavailable service/document states are preliminary interface content, not official rules.
+`figma-motion-ui.json` records all authored transitions read from the Figma browser inspector: linear Smart Animate, 1 ms after-delays, 2000/1000/100 ms transition durations. Original exported storyboard geometry and opacity are compiled into `src/motion-data.json`:
 
-## Browser and functional checks
+- Intro: **5003 ms** (frames 1 → 2 → 2.1 → 2.2).
+- Loop: **12107 ms** (2.2 → 3 → 4 → 5 → 6 → 7 → 8 → 2.2).
+- Four falling flakes and four sparkle tracks, with original per-frame geometry/opacity. No invented rotation or shrink effect.
+- Missing flakes fade out, reset while transparent and reappear. Web Animations API uses one shared clock and linear interpolation.
+- The same sequence is adapted to the prizes area and responsive layouts, as requested. Tablet/mobile prize snowfall is an intentional addition beyond the static reference.
 
-- Desktop navigation and carousel next/previous: passed.
-- Mobile menu open/close, navigation to products and product slide next/previous: passed.
-- FAQ expand/collapse and answer visibility: passed.
-- Winners modal open/close: passed.
-- Browser image completion check: no missing or undecoded images.
-- Browser console error check: no errors returned.
-- Snowfall: changing CSS transforms and opacity were observed over time; both hero and prizes use falling/fading original gold artwork. Reduced-motion CSS disables movement. Precise Figma transition durations were not available from the read-only prototype; current durations are 8–12.2 seconds per particle.
-- `npm run check:assets`: 24 lossless WebP files passed.
-- `npm run build`: passed.
-- `npm run test:sites`: 4 checks passed.
+Presentation and inline preview were opened through the in-app browser. The supplied presentation flow starts at a large wrapper containing the layouts/storyboard; it did not play the nested-frame chain as an isolated full-screen animation. Timing/geometry fidelity therefore comes from the inspected authored transition chain and original exported frames, not an assumed playback speed. No source file edits were needed.
 
-## Remaining follow-up polish / integration inputs
+Browser validation checked source-time 5003 ms and 13007 ms: expected translations and opacity (including 0, 0.5 and 1) were present in both hero and prizes. Live movement and recurring reappearance were observed beyond the introduction. Reduced-motion handling is enforced before creating animations and reacts to preference changes. `?motion=off` and `?motion-time=<ms>` support repeatable visual inspection.
 
-- **P3:** Figma export vs browser font antialiasing and subtle decorative text effects can differ at individual pixels. This report does not claim a zero-difference pixel comparison.
-- **P3:** Snowfall timing can be tuned further against an approved recording or explicit timing specification.
-- Cabinet URL, official rules/legal files, direct mobile-app URLs and real draw results must be supplied by the organizer. The current frontend does not implement authentication or a participation backend.
+## Functional and build checks
 
-No actionable P0/P1/P2 visual findings remain in the compared initial states. The remaining notes above are explicitly outside that visual pass or minor refinement items.
+- Mobile menu opens, closes and navigates to products; its expanded state updates correctly.
+- Both carousels rotate forward/backward in mobile and desktop browser tests.
+- Native FAQ opens/closes; opening another answer closes the previous one.
+- Winners, account and legal dialogs open/close with the intended current placeholder content.
+- All 47 image elements in the production page loaded successfully. No missing images in any reference-size render.
+- Fresh production-preview browser console: no errors.
+- `node --check src/main.js`: passed.
+- `npm run check:assets`: **28 lossless VP8L WebP assets**, passed.
+- `npm run build`: passed. Output is static HTML/CSS/JS, with a 14.35 kB JS bundle before gzip.
+- `npm run test:sites`: **4 passed**. Existing packaging compatibility is retained; no hosted deployment was made.
+
+## Explicit differences and integration inputs
+
+Start date 20.11.2026 intentionally replaces 16.11 in tablet/mobile source frames. Other source end-date and footer-copy inconsistencies remain at the user's request. Minor P3 differences from Figma/browser font antialiasing may remain; this is not a zero-difference pixel claim.
+
+Cabinet URL, official legal/rules documents, direct app-store destinations and draw results require organizer input. These are visible placeholders/search destinations, not working organizer services. Only the first FAQ answer is supplied source copy; other answers are preliminary interface text. Authentication and participation backend are outside the current landing implementation.

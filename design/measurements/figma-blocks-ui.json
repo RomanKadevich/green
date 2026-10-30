@@ -1,0 +1,85 @@
+[
+  {
+    "name": "header",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11685&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: 1,920px",
+      "331 button Copy Height: 110px"
+    ]
+  },
+  {
+    "name": "главный экран",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11631&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: 1,920px",
+      "331 button Copy Height: 1,418px",
+      "1023 button Copy Top: 110px"
+    ]
+  },
+  {
+    "name": "правила участия в игре",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11654&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: Fixed (1,480px)",
+      "331 button Copy Height: Hug (403px)",
+      "1023 button Copy Top: 953px",
+      "1157 button Copy Left: 220px"
+    ]
+  },
+  {
+    "name": "блок призы",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11684&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: 1,581px",
+      "331 button Copy Height: 1,028px",
+      "1023 button Copy Top: 1668px",
+      "1157 button Copy Left: 176px"
+    ]
+  },
+  {
+    "name": "БЛОК ИГРОВЫЕ ТОВАРЫ",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11683&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: 1,581px",
+      "331 button Copy Height: 574px",
+      "1023 button Copy Top: 2836px",
+      "1157 button Copy Left: 176px"
+    ]
+  },
+  {
+    "name": "блок вопросы",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11585&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: Fixed (1,480px)",
+      "331 button Copy Height: Hug (918px)",
+      "1023 button Copy Top: 3550px",
+      "1157 button Copy Left: 220px",
+      "1539 button Copy Gap: 40px"
+    ]
+  },
+  {
+    "name": "победители",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11573&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: Fixed (660px)",
+      "331 button Copy Height: Fixed (120px)",
+      "1023 button Copy Top: 4608px",
+      "1157 button Copy Left: 651px",
+      "1668 button Copy Radius: 90px",
+      "1673 button Copy Border: 6px",
+      "1679 button Copy Padding—Top: 60px",
+      "1684 button Copy Padding—Right: 140px",
+      "1689 button Copy Padding—Bottom: 60px",
+      "1694 button Copy Padding—Left: 140px"
+    ]
+  },
+  {
+    "name": "Footer",
+    "details": [
+      "0 AXWebArea сайт – Figma, URL: figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/%D1%81%D0%B0%D0%B9%D1%82?node-id=3745-11536&t=NNPYU81CVISpnx9E-0",
+      "326 button Copy Width: 1,920px",
+      "331 button Copy Height: 571px",
+      "1023 button Copy Top: 4848px"
+    ]
+  }
+]
