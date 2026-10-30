@@ -3,6 +3,7 @@
 Run inspect-design.py first. Geometry below is measured in the exported frames.
 UI copy is removed from cards so it remains accessible, selectable HTML.
 """
+import re
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import copy, re, json
@@ -90,6 +91,12 @@ extract('desktop','arrow',['стрелка влево'],(174,3166,12,21),vector=
 extract('desktop','caret',['CaretDown_2'],(1621,3835,17,11),vector=True)
 extract('desktop','app-store',['Link'],(220,5140.57,205,63.7778))
 extract('desktop','google-play',['Link_2'],(220,5215.74,205,63.7778))
+extract('tablet','logo',['logo'],(27.4609,4119.8,145.0791,45.02),vector=True)
+extract('mobile','logo',['logo'],(142,3777.42,145.079,43),vector=True)
+extract('tablet','app-store',['Link'],(25,4313.96,180,56))
+extract('tablet','google-play',['Link_2'],(25,4381.35,180,56))
+extract('mobile','app-store',['Link'],(144.5,3950,140,44))
+extract('mobile','google-play',['Link_2'],(144.5,4001.21,140,44))
 extract('desktop','winner-stars',['Frame 1987300239'],(703,4652,57,32),vector=True)
 extract('desktop','snowflake',['снежинка 6'],(1431,205,80,77))
 extract('desktop','sparkle',['снежинка луч 7'],(1612,121,117,112))
@@ -119,12 +126,12 @@ for label in ('desktop','tablet','mobile'):
     textdata[label]=result
     scene=nodes['главный экран_2' if label=='tablet' else 'главный экран']
     snow=[]
-    for element in scene:
-        if not element.get('id','').startswith('снежинка'):continue
+    for element in scene.iter():
+        if not re.fullmatch(r'снежинка (?:луч )?[1-8](?:_\d+)?',element.get('id','')):continue
         rects=[e for e in element.iter() if e.tag==NS+'rect' and e.get('x')]
         x=min(float(e.get('x')) for e in rects);y=min(float(e.get('y')) for e in rects)
         right=max(float(e.get('x'))+float(e.get('width')) for e in rects)
         bottom=max(float(e.get('y'))+float(e.get('height')) for e in rects)
-        snow.append({'x':x,'y':y,'w':right-x,'h':bottom-y,'kind':'sparkle' if element.tag==NS+'rect' else 'snowflake'})
+        snow.append({'x':x,'y':y,'w':right-x,'h':bottom-y,'key':re.sub(r'_\d+$','',element.get('id')),'kind':'sparkle' if element.tag==NS+'rect' else 'snowflake'})
     result['snow']=snow
 (ROOT/'src'/'design-text.json').write_text(json.dumps(textdata,ensure_ascii=False,indent=2),encoding='utf-8')

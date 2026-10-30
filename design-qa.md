@@ -1,71 +1,77 @@
-# GREEN — visual QA
+# GREEN — визуальная сверка с Figma
 
-final result: pass
+final result: passed
 
-Current revision: semantic HTML, CSS and vanilla JavaScript. React has been removed from source and dependencies. Campaign start is **20.11.2026** at all breakpoints, per the user's latest instruction.
+Проверена собранная версия на http://localhost:4174. После исправлений выполнены два свежих прохода по всем блокам на трёх исходных размерах, а также две проверки открытых мобильного и планшетного меню. Оставшихся исправимых расхождений P0/P1/P2 в проверенных состояниях не найдено.
 
-## Source and comparison setup
+## Эталоны и метод
 
-Figma file `xyQjX9MoJGpxK1UVIACjQ3`: desktop `3745:11534`, tablet `3797:16623`, mobile `3831:4012`.
+Файл Figma `xyQjX9MoJGpxK1UVIACjQ3`. Через внутренний браузер повторно экспортированы исходные PNG:
 
-| Layout | Reference | Current browser capture | Compared pixels |
-| --- | --- | --- | --- |
-| Desktop | `design/references/desktop.jpg` | `design/qa/desktop.jpg` | 1920 × 5419 |
-| Tablet | `design/references/tablet.jpg` | `design/qa/tablet.jpg` | 1024 × 4589 |
-| Mobile | `design/references/mobile.jpg` | `design/qa/mobile.jpg` | 430 × 4639 |
+| Версия  | Узел         | Размер      |
+| ------- | ------------ | ----------- |
+| Desktop | `3745:11534` | 1920 × 5419 |
+| Tablet  | `3797:16623` | 1024 × 4589 |
+| Mobile  | `3831:4012`  | 430 × 4639  |
 
-Real in-app-browser renders were captured in same-origin iframes at the exact source widths. Only surrounding whitespace was cropped; content was not resized. State: `?motion=off`, first prize/product card, first FAQ open, menu closed. Side-by-side files under `design/qa/` place source on the left and implementation on the right. Captures and large working exports are local, intentionally excluded from Git.
+Свежие эталоны: `design/qa/recheck/*-figma.png`. Реальные браузерные снимки: `*-pass1.jpg`, `*-pass2.jpg`. В `*-pass1-pair.jpg` / `*-pass2-pair.jpg` слева Figma, справа сайт. Дополнительно просмотрены отдельные блоки и крупные фрагменты. Контент браузерных снимков не масштабировался при сравнении; обрезалось только окружение iframe. Большие рабочие экспорты и снимки сохранены локально, вне Git.
 
-## Measured geometry and typography
+Статическое состояние: `?motion=off`, первые карточки призов/товаров, первый FAQ открыт. Два прохода заново загружали production preview. Замеры: `design/measurements/browser-double-pass.json`; согласованность: `browser-double-pass-consistency.json`. В обоих проходах совпадают размеры и координаты DOM, загружены шрифты и все изображения, отсутствует горизонтальное переполнение. Планшетный и мобильный снимки между проходами совпадают также по декодированным пикселям; у desktop есть очень малая вариация JPEG/растеризации (средняя разница каналов менее 0.002 из 255), без изменения геометрии.
 
-All three source-sized pages have the intended height and no horizontal overflow. DOM measurements are recorded in `design/measurements/browser-layout-validation.json`.
+## Что исправлено при повторной проверке
 
-| Surface | Desktop | Tablet | Mobile |
-| --- | --- | --- | --- |
-| Page height | 5419 | 4589 | 4639 |
-| Header height | 110 | 100 | 100 |
-| Hero height | 1418 | 1016 | 971 |
-| Prizes height | 1170 | 982 | 846 |
-| Products height | 714 | 691 | 650 |
-| FAQ panel x/y/width/height | 220 / 3640 / 1480 / 828 | 15 / 2949 / 974 / 833 | 15 / 2643 / 400 / 828 |
-| Footer y / height | 4848 / 571 | 4037 / 552 | 3701 / 938 |
+- Баннеры, автомобили и фотографии призов/товаров заново получены из настоящих слоёв Figma через нативный PNG-экспорт. Устранены артефакты предыдущего SVG-растрирования фотографий.
+- Восстановлены исходные тени заголовков призов: x −4, y 8, blur 14, цвет `#0C2116`.
+- Поправлены базовые линии подписей товаров и исходный завершающий пробел первой строки.
+- Отдельные оригинальные SVG логотипов для tablet/mobile устраняют искажение пропорций в подвале. Добавлены исходные размеры значков магазинов приложений, исправлены их интервалы.
+- Убрана ошибочная прозрачность юридических ссылок.
+- Восстановлены снежинки планшетного и мобильного баннеров, вложенные в отдельную группу исходника.
+- Заголовок FAQ на планшете смещён на исходные −10 px вместе с особенностью положения панели.
+- Толщина рамки кнопки победителей на планшете — 4 px; рамки кабинета в шапке — 2 px.
+- Стрелки обеих каруселей выставлены по координатам самих исходных SVG-линий, отдельно для каждого размера и каждой карусели, с учётом асимметрии viewBox.
+- Открытые меню воспроизводят отдельные экраны Figma: положение логотипа, крестика, кабинета, ссылок, декора, высоту панели и затемнение. Устранён прежний приблизительный dropdown.
 
-The Figma browser inspector was used to verify header, hero, rules, prizes, products, FAQ, winners and footer dimensions. Evidence: `figma-blocks-ui.json`. The source header shadow is x=0, y=3, blur=20, spread=0, color `#062D18`; it is reproduced in CSS. Desktop winners retain their source 21 px center offset; tablet FAQ retains its 10 px left offset. The mobile source outline and radius are preserved.
+## Геометрия и шрифты
 
-Digits 1/2/3 were selected individually in Figma: Roboto Bold 700, 70 px, 100% line-height, cap-height trim, 44.83 × 55.17 layer bounds. Step containers use 30 px internal gaps and widths 439 / 266 / 395. Inspector evidence is saved in `figma-steps-typography-ui.json` and `figma-steps-spacing-ui.json`. Source glyph baselines and line breaks were preserved rather than substituting the trimmed Figma layer box for a browser line box.
+| Параметр        | Desktop | Tablet | Mobile |
+| --------------- | ------- | ------ | ------ |
+| Высота страницы | 5419    | 4589   | 4639   |
+| Шапка           | 110     | 100    | 100    |
+| Баннер          | 1418    | 1016   | 971    |
+| Призы           | 1170    | 982    | 846    |
+| Товары          | 714     | 691    | 650    |
+| FAQ             | 1080    | 1000   | 936    |
+| Победители      | 356     | 248    | 198    |
+| Подвал          | 571     | 552    | 938    |
 
-Artwork, card dimensions, counts, heading positions, FAQ padding, colors and footer copy were compared side by side at native sizes. Font families use the actual local Fontsource Variable names. FAQ weights follow the source; earlier optical weight overrides were removed. No actionable P0/P1/P2 visual discrepancy remains in the compared initial states.
+Сохранены исходные особенности: сдвиг desktop-кнопки победителей на 21 px, планшетного FAQ на −10 px, мобильная рамка 4 px и радиус 40 px. Замеры интерфейса Figma: `figma-blocks-ui.json`, `figma-steps-typography-ui.json`, `figma-steps-spacing-ui.json`. Цифры шагов — исходный Roboto Bold 700; базовые линии, переносы и межстрочные интервалы сверены с экспортом. Roboto, Manrope и Montserrat загружаются локально, веса следуют исходнику.
 
-## Motion
+Circe Bold в мобильном меню отсутствует у пользователя. Его оригинальные надписи экспортированы из Figma в SVG-контурах внутри обычных HTML-ссылок и кнопки с доступными названиями. Остальной интерфейс остаётся HTML-текстом. Геометрия меню: `figma-menu-layout.json`. Для мобильного эталона исключена верхняя системная строка iOS высотой 50 px; она не является интерфейсом сайта.
 
-`figma-motion-ui.json` records all authored transitions read from the Figma browser inspector: linear Smart Animate, 1 ms after-delays, 2000/1000/100 ms transition durations. Original exported storyboard geometry and opacity are compiled into `src/motion-data.json`:
+## Изображения без потери качества
 
-- Intro: **5003 ms** (frames 1 → 2 → 2.1 → 2.2).
-- Loop: **12107 ms** (2.2 → 3 → 4 → 5 → 6 → 7 → 8 → 2.2).
-- Four falling flakes and four sparkle tracks, with original per-frame geometry/opacity. No invented rotation or shrink effect.
-- Missing flakes fade out, reset while transparent and reappear. Web Animations API uses one shared clock and linear interpolation.
-- The same sequence is adapted to the prizes area and responsive layouts, as requested. Tablet/mobile prize snowfall is an intentional addition beyond the static reference.
+Все **33 WebP** содержат lossless VP8L. `npm run check:assets` проверяет контейнер, кодек и размеры. Дополнительно `node scripts/verify-source-assets.mjs` сравнил изображения до и после WebP: альфа и RGB всех пикселей с ненулевой прозрачностью совпадают точно. Результаты, размеры и SHA-256: `asset-provenance.json`.
 
-Presentation and inline preview were opened through the in-app browser. The supplied presentation flow starts at a large wrapper containing the layouts/storyboard; it did not play the nested-frame chain as an isolated full-screen animation. Timing/geometry fidelity therefore comes from the inspected authored transition chain and original exported frames, not an assumed playback speed. No source file edits were needed.
+Использованы исходные композиции и фотографии, без генерации замен. Часть файлов — прямое преобразование нативных PNG, карточки призов — нативное фото/фон плюс исходные векторные рамки и декор; заголовки и счётчики реализованы текстом HTML. Для остальных небольших элементов используются исходные SVG-фрагменты. Это проверка сохранности экспортированных изображений; она не означает нулевую разницу между всем PNG-макетом и браузерным рендером.
 
-Browser validation checked source-time 5003 ms and 13007 ms: expected translations and opacity (including 0, 0.5 and 1) were present in both hero and prizes. Live movement and recurring reappearance were observed beyond the introduction. Reduced-motion handling is enforced before creating animations and reacts to preference changes. `?motion=off` and `?motion-time=<ms>` support repeatable visual inspection.
+## Анимация и интерактивы
 
-## Functional and build checks
+Измеренные в интерфейсе Figma переходы записаны в `figma-motion-ui.json`; геометрия раскадровки — в `src/motion-data.json`:
 
-- Mobile menu opens, closes and navigates to products; its expanded state updates correctly.
-- Logo navigation returns to the page start with sticky-header clearance, keeping the campaign date visible.
-- Both carousels rotate forward/backward in mobile and desktop browser tests.
-- Native FAQ opens/closes; opening another answer closes the previous one.
-- Winners, account and legal dialogs open/close with the intended current placeholder content.
-- All 47 image elements in the production page loaded successfully. No missing images in any reference-size render.
-- Fresh production-preview browser console: no errors.
-- `node --check src/main.js`: passed.
-- `npm run check:assets`: **28 lossless VP8L WebP assets**, passed.
-- `npm run build`: passed. Output is static HTML/CSS/JS, with a 14.35 kB JS bundle before gzip.
-- `npm run test:sites`: **4 passed**. Existing packaging compatibility is retained; no hosted deployment was made.
+- Вступление **5003 мс**, затем цикл **12107 мс**, linear Smart Animate и исходные задержки 1 мс.
+- Исходные координаты, размеры и прозрачность снежинок; исчезновение и возврат без добавленного вращения или сжатия.
+- Та же последовательность адаптирована к блоку призов и всем размерам.
 
-## Explicit differences and integration inputs
+Презентация и inline preview открывались во внутреннем браузере. Данный presentation flow показывает большую обёртку с макетами/раскадровкой и не запускает вложенную цепочку изолированно во весь экран. Точность времени основана на фактически прочитанных переходах и экспортированных ключевых кадрах.
 
-Start date 20.11.2026 intentionally replaces 16.11 in tablet/mobile source frames. Other source end-date and footer-copy inconsistencies remain at the user's request. Minor P3 differences from Figma/browser font antialiasing may remain; this is not a zero-difference pixel claim.
+Повторная браузерная проверка времени 5003 и 13007 мс на всех трёх размерах подтвердила координаты и прозрачности, включая 0 / 0.5 / 1: `browser-motion-recheck.json`. Живое воспроизведение после вступления меняет позиции в баннере и призах: `browser-live-motion.json`. Поддерживается системное уменьшение движения; `?motion-time=<ms>` фиксирует нужный момент.
 
-Cabinet URL, official legal/rules documents, direct app-store destinations and draw results require organizer input. These are visible placeholders/search destinations, not working organizer services. Only the first FAQ answer is supplied source copy; other answers are preliminary interface text. Authentication and participation backend are outside the current landing implementation.
+Проверены переходы меню к товарам, призам и FAQ, закрытие по ссылке и Escape, стрелки обеих каруселей вперёд/назад, одиночное раскрытие FAQ, открытие кабинета и закрытие диалога клавишей Escape. Ранее также проверены окна победителей и юридических документов. Ошибок загрузки изображений нет.
+
+## Сборка и границы проверки
+
+`npm run build`, `npm run check:assets`, `node --check src/main.js`, `git diff --check` — успешно. `npm run test:sites` — **4/4**. Стек: статический HTML, CSS, vanilla JavaScript; React отсутствует. Клиентский JS около 14.48 kB до gzip. Публикация на хостинг не выполнялась.
+
+Дата начала **20.11.2026** заменяет 16.11 на tablet/mobile по указанию пользователя. Остальные исходные расхождения дат и текста сохранены. Снег в планшетных/мобильных призах добавлен по запросу сверх статичного эталона. Незначительные отличия сглаживания текста и растеризации Figma/браузера относятся к P3; абсолютное попиксельное равенство всей страницы не заявляется.
+
+URL кабинета, официальные документы, прямые ссылки на приложения и результаты розыгрышей ещё требуют данных организатора; сейчас отображаются явно обозначенные заглушки. Ответы FAQ, кроме первого, — предварительный текст. Сервер участия и авторизация в объём лендинга не входят.

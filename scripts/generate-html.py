@@ -49,14 +49,22 @@ def snow(area):
         mobile_keys=['снежинка 8','снежинка 6','снежинка луч 7','снежинка 3','снежинка 2','снежинка луч 1']
         for i,p in enumerate(particles):
             if area=='prizes':key=['снежинка 3','снежинка 2','снежинка 8','снежинка 6'][i%4]
-            else:key=(mobile_keys if label=='mobile' else desktop_keys)[i]
+            else:key=p.get('key',(mobile_keys if label=='mobile' else desktop_keys)[i])
             kind='desktop-sparkle' if 'луч' in key else 'desktop-snow-'+key.split()[-1]
             style=f"left:{px(p['x'])};top:{px(p['y']-origin)};width:{px(p['w'])};height:{px(p['h'])}"
             children.append(image(kind,'','webp',f'class="snow-particle" data-motion-key="{key}" data-area="{area}" style="{style}"'))
         output.append(f'<div class="copy-{label}">'+''.join(children)+'</div>')
     return f'<div class="snow-layer {"snow-layer--prizes" if area=="prizes" else ""}" aria-hidden="true">'+''.join(output)+'</div>'
 
-nav=''.join(f'<a href="#{id}">{text}</a>' for id,text in [('rules','Правила'),('prizes','Призы'),('products','Игровые товары'),('faq','Вопрос-ответ'),('winners','Победители')])
+menu=json.loads((ROOT/'src/menu-layout.json').read_text(encoding='utf-8'))
+navlinks=[]
+for i,(id,text) in enumerate([('rules','Правила'),('prizes','Призы'),('products','Игровые товары'),('faq','Вопрос-ответ'),('winners','Победители')]):
+    t=menu['tablet']['links'][i];m=menu['mobile']['links'][i]['outline']
+    style=f'--tx:{t["x"]};--ty:{t["baseline"]-18*.841796875};--mx:{m["x"]};--my:{m["y"]};--mw:{m["w"]};--mh:{m["h"]}'
+    navlinks.append(f'<a href="#{id}" style="{style}"><span>{text}</span>{image("mobile-menu-label-"+id,"","svg",'class="menu-label"')}</a>')
+menu_snow=image('mobile-menu-snow','','webp','class="menu-snow-art"')
+nav=f'<div class="menu-content"><button type="button" class="menu-account" data-dialog="account-dialog">{picture("menu-account",ext="svg")}<span>Личный кабинет</span>{image("mobile-menu-label-account","","svg",'class="menu-label"')}</button>'+''.join(navlinks)+f'<div class="menu-snow" aria-hidden="true">{menu_snow}</div></div>'
+
 prize_data=[('milka','ПОДАРОЧНЫЙ НАБОР «MILKA»',300),('100','СЕРТИФИКАТ МАГАЗИНА «GREEN»',40),('50','СЕРТИФИКАТ МАГАЗИНА «GREEN»',64)]
 prizes=[]
 for id,title,count in prize_data:
@@ -65,7 +73,7 @@ for id,title,count in prize_data:
 products=[]
 for id,brand in [('milka','Milka'),('alpen','Alpen Gold'),('barni','Медвежонок Барни')]:
     pic=picture('product-milka','Игровые товары Milka') if id=='milka' else (f'<picture><source media="(min-width:768px) and (max-width:1199px)" srcset="/assets/tablet-product-alpen.webp">{image("desktop-product-alpen","Игровые товары Alpen Gold")}</picture>' if id=='alpen' else image('desktop-product-barni','Игровые товары Медвежонок Барни'))
-    products.append(f'<article class="product-card" data-card>{pic}<h3>Продукция<br>«{brand}»<br>в ассортименте</h3></article>')
+    products.append(f'<article class="product-card" data-card>{pic}<h3>Продукция&nbsp;<br>«{brand}»<br>в ассортименте</h3></article>')
 def arrows(name):
     return ''.join(f'<button type="button" class="carousel-arrow carousel-arrow--{direction}" data-carousel-direction="{delta}" aria-label="{label} {name}">{image("desktop-arrow","","svg")}</button>' for direction,delta,label in [('prev',-1,'Предыдущие'),('next',1,'Следующие')])
 questions=['Кто может принять участие в рекламной игре?','Когда проходит Рекламная игра?','Как стать участником Рекламной игры?','Что делать, если игровые коды не начислены в Личном кабинете?','Какие товары необходимо приобрести для участия в Рекламной игре?','Когда проходят розыгрыши призов?','Как узнать о результатах розыгрыша?','Где и когда можно получить приз?']
@@ -77,14 +85,15 @@ for id,title,body in [('account','Личный кабинет','Личный к�
 markup=f'''<!doctype html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GREEN — Сладкий сезон больших подарков</title><meta name="description" content="Рекламная игра GREEN. Сладкий сезон больших подарков: GEELY EX2, подарочные наборы Milka и сертификаты GREEN."></head>
 <body><div class="landing">
-<header class="site-header"><a class="header-logo" href="#top" aria-label="GREEN — на главную">{image('desktop-logo','Green','svg')}</a><nav class="navigation" id="main-navigation" aria-label="Основная навигация">{nav}<button type="button" class="account-link mobile-only" data-dialog="account-dialog">Личный кабинет</button></nav><button type="button" class="account-link desktop-account" data-dialog="account-dialog">{image('desktop-profile','','svg')}Личный кабинет</button><button type="button" class="menu-toggle" aria-label="Открыть меню" aria-controls="main-navigation" aria-expanded="false">{image('mobile-menu','','svg')}</button></header>
+<header class="site-header"><a class="header-logo" href="#top" aria-label="GREEN — на главную">{image('desktop-logo','Green','svg','class="header-logo-default"')}{picture('menu-logo','Green',ext='svg',cls='header-logo-menu')}</a><nav class="navigation" id="main-navigation" aria-label="Основная навигация">{nav}</nav><button type="button" class="account-link desktop-account" data-dialog="account-dialog">{image('desktop-profile','','svg')}Личный кабинет</button><button type="button" class="menu-toggle" aria-label="Открыть меню" aria-controls="main-navigation" aria-expanded="false">{image('mobile-menu','','svg','class="menu-hamburger"')}{picture('menu-close',ext='svg',cls='menu-close')}</button></header>
 <main id="top"><section class="hero" aria-labelledby="campaign-title"><h1 id="campaign-title" class="sr-only">Сладкий сезон больших подарков — рекламная игра GREEN</h1>{picture('hero','Выиграй GEELY EX2 и сотни других призов',cls='hero-art')}{snow('hero')}{positioned('date')}<span id="rules" class="rules-anchor"></span><div class="rules-copy">{picture('rules',ext='svg',cls='rules-art')}{positioned('rules')}</div></section>
 <section class="prizes-section" id="prizes" aria-labelledby="prizes-title">{snow('prizes')}<h2 id="prizes-title" class="section-heading">ПРИЗЫ</h2>{picture('grand-prize','Главный приз — автомобиль GEELY EX2',cls='grand-prize')}<div class="carousel prize-carousel" aria-roledescription="карусель" aria-label="Призы"><div class="card-track" aria-live="polite">{''.join(prizes)}</div>{arrows('призы')}</div></section>
 <section class="products-section" id="products" aria-labelledby="products-title"><h2 id="products-title" class="section-heading">ИГРОВЫЕ ТОВАРЫ</h2><div class="carousel product-carousel" aria-roledescription="карусель" aria-label="Игровые товары"><div class="card-track" aria-live="polite">{''.join(products)}</div>{arrows('товары')}</div></section>
 <section class="faq-section" id="faq" aria-labelledby="faq-title"><h2 id="faq-title" class="section-heading">ВОПРОС-ОТВЕТ</h2><div class="faq-list">{faq}</div></section>
 <section class="winners-section" id="winners"><button type="button" class="winners-button" data-dialog="winners-dialog">{image('desktop-winner-stars','','svg')}<span>ПОБЕДИТЕЛИ</span>{image('desktop-winner-stars','','svg')}</button></section></main>
-<footer class="site-footer">{image('desktop-logo','Green','svg','class="footer-logo"')}{positioned('footer')}<div class="store-badges"><a href="https://apps.apple.com/search?term=GREEN" target="_blank" rel="noreferrer" aria-label="Найти приложение GREEN в App Store">{image('desktop-app-store','Download on the App Store')}</a><a href="https://play.google.com/store/search?q=GREEN&amp;c=apps" target="_blank" rel="noreferrer" aria-label="Найти приложение GREEN в Google Play">{image('desktop-google-play','Download on Google Play')}</a></div></footer>
+<footer class="site-footer">{picture('logo','Green',ext='svg',cls='footer-logo')}{positioned('footer')}<div class="store-badges"><a href="https://apps.apple.com/search?term=GREEN" target="_blank" rel="noreferrer" aria-label="Найти приложение GREEN в App Store">{picture('app-store','Download on the App Store')}</a><a href="https://play.google.com/store/search?q=GREEN&amp;c=apps" target="_blank" rel="noreferrer" aria-label="Найти приложение GREEN в Google Play">{picture('google-play','Download on Google Play')}</a></div></footer>
 {''.join(dialogs)}</div><script type="module" src="/src/main.js"></script></body></html>'''
+markup=markup.replace('/assets/desktop-menu-logo.svg','/assets/tablet-menu-logo.svg').replace('/assets/desktop-menu-account.svg','/assets/tablet-menu-account.svg').replace('/assets/desktop-menu-close.svg','/assets/tablet-menu-close.svg')
 (ROOT/'index.html').write_text(markup,encoding='utf-8')
 
 css=[]

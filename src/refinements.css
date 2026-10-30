@@ -1,4 +1,77 @@
 /* Adjustments from the one-to-one reference comparison. */
+/* Original arrow paths use asymmetric coordinates within their SVG viewBox. */
+.landing .carousel-arrow {
+  transform: none;
+  right: auto;
+}
+.landing .carousel-arrow--prev {
+  left: calc(-60 * var(--u));
+}
+.landing .carousel-arrow--next {
+  left: calc(1502.663 * var(--u));
+}
+.landing .prize-carousel .carousel-arrow {
+  top: calc(176.5 * var(--u));
+}
+.landing .product-carousel .carousel-arrow {
+  top: calc(225.5 * var(--u));
+}
+.landing .prize-carousel .carousel-arrow--next {
+  top: calc(176.17 * var(--u));
+}
+.landing .product-carousel .carousel-arrow--next {
+  top: calc(225.17 * var(--u));
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .prize-carousel .carousel-arrow--prev {
+    left: calc(433 * var(--u));
+  }
+  .landing .prize-carousel .carousel-arrow--next {
+    left: calc(501.666 * var(--u));
+  }
+  .landing .product-carousel .carousel-arrow--prev {
+    left: calc(432.667 * var(--u));
+  }
+  .landing .product-carousel .carousel-arrow--next {
+    left: calc(501.333 * var(--u));
+  }
+  .landing .prize-carousel .carousel-arrow {
+    top: calc(398.54 * var(--u));
+  }
+  .landing .prize-carousel .carousel-arrow--next {
+    top: calc(398.21 * var(--u));
+  }
+  .landing .product-carousel .carousel-arrow {
+    top: calc(497.67 * var(--u));
+  }
+  .landing .product-carousel .carousel-arrow--next {
+    top: calc(497.34 * var(--u));
+  }
+}
+@media (max-width: 767px) {
+  .landing .carousel-arrow--prev {
+    left: calc(145.667 * var(--u));
+  }
+  .landing .carousel-arrow--next {
+    left: calc(214.333 * var(--u));
+  }
+  .landing .prize-carousel .carousel-arrow {
+    top: calc(340.21 * var(--u));
+  }
+  .landing .prize-carousel .carousel-arrow--next {
+    top: calc(339.88 * var(--u));
+  }
+  .landing .product-carousel .carousel-arrow {
+    top: calc(412.43 * var(--u));
+  }
+  .landing .product-carousel .carousel-arrow--next {
+    top: calc(412.1 * var(--u));
+  }
+}
+.prize-card h3 {
+  text-shadow: calc(-4 * var(--u)) calc(8 * var(--u)) calc(14 * var(--u))
+    #0c2116;
+}
 @media (max-width: 767px) {
   .landing .faq-question {
     font-weight: 600;
@@ -204,4 +277,9 @@ section[id],
 }
 .menu-toggle.is-open > img {
   transform: rotate(90deg);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .landing .faq-section .section-heading {
+    transform: translateX(calc(-10 * var(--u)));
+  }
 }

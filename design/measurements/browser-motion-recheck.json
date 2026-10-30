@@ -1,0 +1,422 @@
+[
+  {
+    "width": 1920,
+    "time": 5003,
+    "particles": [
+      {
+        "area": "hero",
+        "key": "снежинка 8",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -240)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 7",
+        "opacity": "1",
+        "transform": "matrix(0.770409, 0, 0, 0.767857, 20, 20)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -60)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 5",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 4",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -30, -114)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -128)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 1",
+        "opacity": "1",
+        "transform": "matrix(0.837724, 0, 0, 0.834951, 30, 30)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -30, -74.1)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -83.2)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 8",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -156)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -39)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -30, -74.1)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -83.2)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "time": 5003,
+    "particles": [
+      {
+        "area": "hero",
+        "key": "снежинка 8",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -168)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 7",
+        "opacity": "1",
+        "transform": "matrix(0.770409, 0, 0, 0.767857, 14, 14)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -42)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 5",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 4",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -21, -79.8)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -89.6)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 1",
+        "opacity": "1",
+        "transform": "matrix(0.837724, 0, 0, 0.834951, 21, 21)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -21, -51.87)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -58.24)"
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "time": 5003,
+    "particles": [
+      {
+        "area": "hero",
+        "key": "снежинка 8",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -129.6)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -32.4)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 5",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -16.2, -61.56)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -69.12)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 1",
+        "opacity": "1",
+        "transform": "matrix(0.837724, 0, 0, 0.834951, 16.2, 16.2)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, -16.2, -40.014)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, -44.928)"
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "time": 13007,
+    "particles": [
+      {
+        "area": "hero",
+        "key": "снежинка 8",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, 0, 194)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 7",
+        "opacity": "1",
+        "transform": "matrix(0.915931, 0, 0, 0.919643, 20, 20)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 6",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 260)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 5",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 4",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -30, 277)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 160)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 1",
+        "opacity": "1",
+        "transform": "matrix(0.99596, 0, 0, 1, 20, 20)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -30, 180.05)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 104)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 8",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, 0, 126.1)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 6",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 169)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -30, 180.05)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 104)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "time": 13007,
+    "particles": [
+      {
+        "area": "hero",
+        "key": "снежинка 8",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, 0, 135.8)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 7",
+        "opacity": "1",
+        "transform": "matrix(0.915931, 0, 0, 0.919643, 14, 14)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 6",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 182)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 5",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 4",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -21, 193.9)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 112)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 1",
+        "opacity": "1",
+        "transform": "matrix(0.99596, 0, 0, 1, 14, 14)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -21, 126.035)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 72.8)"
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "time": 13007,
+    "particles": [
+      {
+        "area": "hero",
+        "key": "снежинка 8",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, 0, 104.76)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 6",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 140.4)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 5",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -16.2, 149.58)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 86.4)"
+      },
+      {
+        "area": "hero",
+        "key": "снежинка луч 1",
+        "opacity": "1",
+        "transform": "matrix(0.99596, 0, 0, 1, 10.8, 10.8)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 3",
+        "opacity": "0.5",
+        "transform": "matrix(1, 0, 0, 1, -16.2, 97.227)"
+      },
+      {
+        "area": "prizes",
+        "key": "снежинка 2",
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 0, 56.16)"
+      }
+    ]
+  }
+]

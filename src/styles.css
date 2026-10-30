@@ -110,7 +110,7 @@ p {
   top: calc(32 * var(--u));
   width: calc(216 * var(--u));
   height: calc(46 * var(--u));
-  border: calc(1 * var(--u)) solid var(--gold);
+  border: calc(2 * var(--u)) solid var(--gold);
   border-radius: calc(24 * var(--u));
   display: flex;
   align-items: center;
@@ -247,7 +247,7 @@ p {
 .product-card h3 {
   position: absolute;
   left: 0;
-  top: calc(369 * var(--u));
+  top: calc(371 * var(--u));
   width: 100%;
   font-family: "Montserrat Variable", sans-serif;
   font-weight: 700;
@@ -384,8 +384,13 @@ p {
   width: 100%;
   height: auto;
 }
-.site-footer button.original-copy {
-  opacity: 0.7;
+.footer-logo > img,
+.store-badges picture {
+  display: block;
+  width: 100%;
+}
+.footer-logo > img {
+  height: 100%;
 }
 .snow-layer {
   position: absolute;
@@ -594,7 +599,7 @@ p {
 @media (min-width: 768px) and (max-width: 1199px) {
   .landing .winners-button {
     font-size: calc(40 * var(--u));
-    border-width: calc(3 * var(--u));
+    border-width: calc(4 * var(--u));
     gap: calc(46 * var(--u));
   }
 }
@@ -609,9 +614,9 @@ p {
 @media (min-width: 768px) and (max-width: 1199px) {
   .landing .store-badges {
     left: calc(25 * var(--u));
-    top: calc(274 * var(--u));
+    top: calc(276.96 * var(--u));
     width: calc(180 * var(--u));
-    gap: calc(10 * var(--u));
+    gap: calc(11.39 * var(--u));
   }
 }
 @media (max-width: 767px) {
@@ -703,7 +708,7 @@ p {
 }
 @media (max-width: 767px) {
   .landing .product-card h3 {
-    top: calc(305 * var(--u));
+    top: calc(308.33 * var(--u));
     font-size: calc(19.8219 * var(--u));
     line-height: calc(22 * var(--u));
   }

@@ -1,12 +1,15 @@
 import "./styles.css";
 import "./refinements.css";
 import "./layout.css";
+import "./menu.css";
 import motion from "./motion-data.json";
 
 // HTML is already present in index.html. JavaScript only enhances interactions.
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
 function setMenu(open) {
+  document.querySelector(".landing").classList.toggle("menu-open", open);
+  document.documentElement.classList.toggle("menu-is-open", open);
   navigation.classList.toggle("is-open", open);
   menuButton.classList.toggle("is-open", open);
   menuButton.setAttribute("aria-expanded", String(open));
