@@ -46,6 +46,6 @@ for label, name in [('desktop', 'Landing 1920 px'), ('tablet', 'Landing Tablet 1
         lines.append('  '*depth + tag+' '+json.dumps(attrs,ensure_ascii=False)+((' TEXT '+text) if text else ''))
         for c in el: walk(c,depth+1)
     walk(root)
-    (qa / f'{label}-layers.txt').write_text('\n'.join(lines),encoding='utf-8')
+    (qa / f'{label}-layers.txt').write_text('\n'.join(line.rstrip() for line in lines)+'\n',encoding='utf-8')
     print(label, root.attrib, 'layers', len(lines))
 print('source images', len(list(assets.iterdir())))

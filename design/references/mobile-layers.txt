@@ -156,7 +156,7 @@ svg {"width": "430", "height": "4639", "viewBox": "0 0 430 4639", "fill": "none"
               rect {"id": "снежинка1 1_4", "x": "8.27246", "y": "277.982", "width": "26.0183", "height": "25.0175", "fill": "url(#pattern12_3831_4012)"}
             rect {"id": "снежинка луч 1", "x": "14", "y": "137", "width": "46.7553", "height": "44.8257", "fill": "url(#pattern13_3831_4012)"}
         g {"id": "правила участия в игре"}
-          text {"id": "ПРАВИЛА УЧАСТИЯ В РЕКЛАМНОЙ ИГРЕ", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT ПРАВИЛА УЧАСТИЯ 
+          text {"id": "ПРАВИЛА УЧАСТИЯ В РЕКЛАМНОЙ ИГРЕ", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "28", "font-weight": "bold", "letter-spacing": "0em"} TEXT ПРАВИЛА УЧАСТИЯ
 В РЕКЛАМНОЙ ИГРЕ
             tspan {"x": "78.8008", "y": "629.906"}
             tspan {"x": "77.6113", "y": "660.906"}
@@ -266,7 +266,7 @@ svg {"width": "430", "height": "4639", "viewBox": "0 0 430 4639", "fill": "none"
                   rect {"x": "30", "y": "1561", "width": "370", "height": "50", "rx": "25", "fill": "#18944C"}
                   rect {"x": "30", "y": "1561", "width": "370", "height": "50", "rx": "25", "stroke": "url(#paint40_linear_3831_4012)", "stroke-width": "3"}
                   g {"id": "подарочный набор «Milka»", "filter": "url(#filter5_d_3831_4012)"}
-                    text {"transform": "translate(79.5 1575)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "18", "font-weight": "800", "letter-spacing": "0em"} TEXT ПОДАРОЧНЫЙ НАБОР «MILKA» 
+                    text {"transform": "translate(79.5 1575)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "18", "font-weight": "800", "letter-spacing": "0em"} TEXT ПОДАРОЧНЫЙ НАБОР «MILKA»
                       tspan {"x": "0.350586", "y": "17.1523"}
                 g {"id": "приз"}
                   g {"id": "тень", "opacity": "0.3", "filter": "url(#filter6_f_3831_4012)"}
@@ -300,9 +300,9 @@ svg {"width": "430", "height": "4639", "viewBox": "0 0 430 4639", "fill": "none"
               path {"id": "Rectangle 3982", "fill": "white", "stroke-width": "2.58547", "stroke": "#FFE19B"}
               g {"id": "Group 1987300244"}
                 path {"id": "Rectangle 3983", "fill": "url(#paint42_linear_3831_4012)"}
-              text {"id": "Продукция «Milka» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "19.8219", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция 
+              text {"id": "Продукция «Milka» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "19.8219", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция
 «Milka»
-в ассортименте  
+в ассортименте
                 tspan {"x": "151.227", "y": "2373.21"}
                 tspan {"x": "175.792", "y": "2395.21"}
                 tspan {"x": "130.157", "y": "2417.21"}
@@ -349,7 +349,7 @@ svg {"width": "430", "height": "4639", "viewBox": "0 0 430 4639", "fill": "none"
               tspan {"x": "200.5", "y": "4117.16"}
           g {"id": "Frame 1987300248"}
             g {"id": "Frame 1987300250"}
-              text {"id": "с 10:00 до 17:00 в будние дни (понедельник- пятница), за исключением выходных и праздничных дней, установленных и объявленных нерабочими в порядке, предусмотренном законодательством;", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT с 10:00 до 17:00 в будние дни (понедельник- пятница), 
+              text {"id": "с 10:00 до 17:00 в будние дни (понедельник- пятница), за исключением выходных и праздничных дней, установленных и объявленных нерабочими в порядке, предусмотренном законодательством;", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT с 10:00 до 17:00 в будние дни (понедельник- пятница),
 за исключением выходных и праздничных дней, установленных и объявленных нерабочими в порядке, предусмотренном законодательством;
                 tspan {"x": "20.7031", "y": "4167.74"}
                 tspan {"x": "44.1919", "y": "4185.74"}
@@ -357,27 +357,27 @@ svg {"width": "430", "height": "4639", "viewBox": "0 0 430 4639", "fill": "none"
                 tspan {"x": "73.4302", "y": "4221.74"}
             g {"id": "Frame 1987300251"}
               g {"id": "Для участия в рекламной игре обязательно наличие карты «GREENКАРТА»."}
-                text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT Для участия в рекламной игре обязательно наличие карты 
+                text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT Для участия в рекламной игре обязательно наличие карты
                   tspan {"x": "27.5366", "y": "4259.74"}
                   tspan {"x": "132.566", "y": "4277.74"}
                 text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "font-weight": "bold", "letter-spacing": "0em"} TEXT «GREENКАРТА».
                   tspan {"x": "177.874", "y": "4277.74"}
             g {"id": "Frame 1987300249"}
               g {"id": "Рекламная игра «Сладкий сезон больших подарков»."}
-                text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "font-weight": "600", "letter-spacing": "0em"} TEXT Рекламная игра 
+                text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "font-weight": "600", "letter-spacing": "0em"} TEXT Рекламная игра
                   tspan {"x": "19.2676", "y": "4315.74"}
-                text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "font-weight": "600", "letter-spacing": "0em"} TEXT «Сладкий сезон больших подарков». 
+                text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "font-weight": "600", "letter-spacing": "0em"} TEXT «Сладкий сезон больших подарков».
                   tspan {"x": "139.561", "y": "4315.74"}
-              text {"id": "Сроки проведения рекламной игры: c 20 ноября 2026 года по 8 марта 2027 года (включая период розыгрыша и вручения призов).", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT Сроки проведения рекламной игры: 
-c 20 ноября 2026 года по 8 марта 2027 года 
-(включая период розыгрыша и вручения призов). 
+              text {"id": "Сроки проведения рекламной игры: c 20 ноября 2026 года по 8 марта 2027 года (включая период розыгрыша и вручения призов).", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT Сроки проведения рекламной игры:
+c 20 ноября 2026 года по 8 марта 2027 года
+(включая период розыгрыша и вручения призов).
                 tspan {"x": "84.7461", "y": "4343.74"}
                 tspan {"x": "58.6426", "y": "4361.74"}
                 tspan {"x": "39.0942", "y": "4379.74"}
               text {"id": "Организатор: ЧРУП «Промофреш», УНП 691757897.", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "15", "letter-spacing": "0em"} TEXT Организатор: ЧРУП «Промофреш», УНП 691757897.
                 tspan {"x": "34.1797", "y": "4407.74"}
         g {"id": "Frame 1987300279"}
-          text {"id": "Heading 2 → Контакты_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "16", "font-weight": "600", "letter-spacing": "0em"} TEXT СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ КАРТУ «ВЫГОДА!» 
+          text {"id": "Heading 2 → Контакты_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "16", "font-weight": "600", "letter-spacing": "0em"} TEXT СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ КАРТУ «ВЫГОДА!»
             tspan {"x": "95.9375", "y": "3883.63"}
             tspan {"x": "93.5547", "y": "3904.63"}
             tspan {"x": "143.078", "y": "3925.63"}

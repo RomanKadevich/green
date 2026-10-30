@@ -27,12 +27,12 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
             g {"id": "Для участия в рекламной игре обязательно наличие карты «GREENКАРТА»."}
               text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "bold", "letter-spacing": "0em"} TEXT «GREENКАРТА».
                 tspan {"x": "876.156", "y": "4285.97"}
-              text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "letter-spacing": "0em"} TEXT Для участия в рекламной игре обязательно наличие карты 
+              text {"fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "letter-spacing": "0em"} TEXT Для участия в рекламной игре обязательно наличие карты
                 tspan {"x": "425", "y": "4285.97"}
           g {"id": "Frame 1987300249"}
-            text {"id": "Рекламная игра «Сладкий сезон больших подарков».", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "600", "letter-spacing": "0em"} TEXT Рекламная игра «Сладкий сезон больших подарков». 
+            text {"id": "Рекламная игра «Сладкий сезон больших подарков».", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "font-weight": "600", "letter-spacing": "0em"} TEXT Рекламная игра «Сладкий сезон больших подарков».
               tspan {"x": "425", "y": "4334.97"}
-            text {"id": "Сроки проведения рекламной игры: С 20 ноября 2026 года по 80 марта 2027 года (включая период розыгрыша и вручения призов).", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "letter-spacing": "0em"} TEXT Сроки проведения рекламной игры: С 20 ноября 2026 года по 80 марта 2027 года (включая период розыгрыша и вручения призов). 
+            text {"id": "Сроки проведения рекламной игры: С 20 ноября 2026 года по 80 марта 2027 года (включая период розыгрыша и вручения призов).", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "letter-spacing": "0em"} TEXT Сроки проведения рекламной игры: С 20 ноября 2026 года по 80 марта 2027 года (включая период розыгрыша и вручения призов).
               tspan {"x": "425", "y": "4363.97"}
               tspan {"x": "425", "y": "4382.97"}
             text {"id": "Организатор: ЧРУП «Промофреш», УНП 691757897.", "fill": "#FEFEFE", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "16", "letter-spacing": "0em"} TEXT Организатор: ЧРУП «Промофреш», УНП 691757897.
@@ -51,7 +51,7 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
             path {"id": "Vector_9", "fill": "#FEFEFE"}
             path {"id": "Vector_10", "fill": "#FEFEFE"}
         g {"id": "Frame 1987300254"}
-          text {"id": "Heading 2 → Контакты_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "16", "font-weight": "600", "letter-spacing": "0em"} TEXT СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ КАРТУ «GREENКАРТА» 
+          text {"id": "Heading 2 → Контакты_2", "fill": "white", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Manrope", "font-size": "16", "font-weight": "600", "letter-spacing": "0em"} TEXT СКАЧАЙТЕ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ И АКТИВИРУЙТЕ КАРТУ «GREENКАРТА»
             tspan {"x": "25", "y": "4237.59"}
             tspan {"x": "25", "y": "4258.59"}
             tspan {"x": "25", "y": "4279.59"}
@@ -229,7 +229,7 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
                 g {"id": "Frame 1987300269"}
                   text {"id": "ПОДТВЕРДИ", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "34", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПОДТВЕРДИ
                     tspan {"x": "145", "y": "915.121"}
-                  text {"id": "согласие на участие в рекламной игре в личном кабинете", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "letter-spacing": "0em"} TEXT согласие на участие 
+                  text {"id": "согласие на участие в рекламной игре в личном кабинете", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "letter-spacing": "0em"} TEXT согласие на участие
 в рекламной игре
 в личном кабинете
                     tspan {"x": "145", "y": "946.52"}
@@ -355,7 +355,7 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
                 g {"id": "Frame 1987300269_4"}
                   text {"id": "ПОДТВЕРДИ_2", "fill": "#0B4F26", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "34", "font-weight": "bold", "letter-spacing": "0.01em"} TEXT ПОДТВЕРДИ
                     tspan {"x": "145", "y": "905.121"}
-                  text {"id": "согласие на участие в рекламной игре в личном кабинете_2", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "letter-spacing": "0em"} TEXT согласие на участие 
+                  text {"id": "согласие на участие в рекламной игре в личном кабинете_2", "fill": "#162B19", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "letter-spacing": "0em"} TEXT согласие на участие
 в рекламной игре
 в личном кабинете
                     tspan {"x": "145", "y": "936.52"}
@@ -454,7 +454,7 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
                 rect {"x": "40", "y": "1686", "width": "450", "height": "58", "rx": "29", "fill": "#18944C"}
                 rect {"x": "40", "y": "1686", "width": "450", "height": "58", "rx": "29", "stroke": "url(#paint61_linear_3797_16623)", "stroke-width": "3"}
                 g {"id": "подарочный набор «Milka»", "filter": "url(#filter6_d_3797_16623)"}
-                  text {"transform": "translate(99.5 1702)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "font-weight": "800", "letter-spacing": "0em"} TEXT ПОДАРОЧНЫЙ НАБОР «MILKA» 
+                  text {"transform": "translate(99.5 1702)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "font-weight": "800", "letter-spacing": "0em"} TEXT ПОДАРОЧНЫЙ НАБОР «MILKA»
                     tspan {"x": "0.317383", "y": "20.5195"}
               g {"id": "приз"}
                 g {"id": "тень", "opacity": "0.3", "filter": "url(#filter7_f_3797_16623)"}
@@ -479,7 +479,7 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
                 rect {"x": "534", "y": "1685.3", "width": "450", "height": "55.97", "rx": "27.985", "fill": "#18944C"}
                 rect {"x": "534", "y": "1685.3", "width": "450", "height": "55.97", "rx": "27.985", "stroke": "url(#paint63_linear_3797_16623)", "stroke-width": "3"}
                 g {"id": "сертификат магазина «Green»", "filter": "url(#filter8_d_3797_16623)"}
-                  text {"transform": "translate(575.5 1700.28)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "font-weight": "800", "letter-spacing": "0em"} TEXT СЕРТИФИКАТ МАГАЗИНА «GREEN» 
+                  text {"transform": "translate(575.5 1700.28)", "fill": "#E2EDE6", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Roboto", "font-size": "22", "font-weight": "800", "letter-spacing": "0em"} TEXT СЕРТИФИКАТ МАГАЗИНА «GREEN»
                     tspan {"x": "0.345703", "y": "20.5195"}
               g {"id": "приз_2"}
                 g {"id": "тень_2", "opacity": "0.3", "filter": "url(#filter9_f_3797_16623)"}
@@ -513,9 +513,9 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
             path {"id": "Rectangle 3982", "fill": "white", "stroke-width": "3.10256", "stroke": "#FFE19B"}
             g {"id": "Group 1987300244"}
               path {"id": "Rectangle 3983", "fill": "url(#paint65_linear_3797_16623)"}
-            text {"id": "Продукция «Milka» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7863", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция 
+            text {"id": "Продукция «Milka» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7863", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция
 «Milka»
-в ассортименте  
+в ассортименте
               tspan {"x": "188.473", "y": "2649.65"}
               tspan {"x": "217.95", "y": "2675.65"}
               tspan {"x": "163.188", "y": "2701.65"}
@@ -525,9 +525,9 @@ svg {"width": "1024", "height": "4589", "viewBox": "0 0 1024 4589", "fill": "non
             path {"id": "Rectangle 3982_2", "fill": "white", "stroke-width": "3.10198", "stroke": "#FFE19B"}
             g {"id": "Group 1987300244_2"}
               path {"id": "Rectangle 3983_2", "fill": "url(#paint66_linear_3797_16623)"}
-            text {"id": "Продукция «Alpen Gold» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7818", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция 
+            text {"id": "Продукция «Alpen Gold» в ассортименте", "fill": "black", "{http://www.w3.org/XML/1998/namespace}space": "preserve", "font-family": "Montserrat", "font-size": "23.7818", "font-weight": "bold", "letter-spacing": "0em"} TEXT Продукция
 «Alpen Gold»
-в ассортименте  
+в ассортименте
               tspan {"x": "688.487", "y": "2649.65"}
               tspan {"x": "682.658", "y": "2675.65"}
               tspan {"x": "663.207", "y": "2701.65"}
