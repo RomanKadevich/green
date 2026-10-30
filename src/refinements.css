@@ -27,7 +27,8 @@ html {
   height: 1px;
 }
 section[id],
-#rules {
+#rules,
+#top {
   scroll-margin-top: calc(110 * var(--u));
 }
 @media (min-width: 768px) and (max-width: 1199px) {

@@ -53,6 +53,7 @@ Browser validation checked source-time 5003 ms and 13007 ms: expected translatio
 ## Functional and build checks
 
 - Mobile menu opens, closes and navigates to products; its expanded state updates correctly.
+- Logo navigation returns to the page start with sticky-header clearance, keeping the campaign date visible.
 - Both carousels rotate forward/backward in mobile and desktop browser tests.
 - Native FAQ opens/closes; opening another answer closes the previous one.
 - Winners, account and legal dialogs open/close with the intended current placeholder content.
