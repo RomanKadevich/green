@@ -1,15 +1,37 @@
-node_modules/
-dist/
-design/artwork/
-design/fonts/
-public/design-inspect/
-public/__qa.html
-qa.html
-design/exports/
-design/normalized/
-design/source/
-design/qa/
-*.log
+# Local dependencies and generated output
+/node_modules/
+/dist/
+/build/
+/coverage/
+/.cache/
+/.vite/
+
+# Environment variables and local overrides
 .env
 .env.*
 !.env.example
+*.local
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system files
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local exports and visual checks
+/design/
+/qa/
+/screenshots/
+/qa.html
