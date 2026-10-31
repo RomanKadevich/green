@@ -12,6 +12,16 @@
 
 Сборка и установка зависимостей не требуются. Для публикации достаточно загрузить `index.html`, `css/`, `js/` и `assets/` на любой статический хостинг. Относительные пути позволяют разместить сайт также в подкаталоге.
 
+## GitHub Pages
+
+Workflow `.github/workflows/pages.yml` публикует сайт через GitHub Actions без сборки и установки зависимостей.
+
+1. В репозитории откройте **Settings → Pages**.
+2. В **Build and deployment → Source** выберите **GitHub Actions**.
+3. Во вкладке **Actions** откройте **Deploy GREEN to GitHub Pages** и нажмите **Run workflow → Run workflow**, выбрав ветку `main`.
+
+После успешного запуска адрес сайта: https://romankadevich.github.io/green/. Дальнейшие push в `main` автоматически обновляют сайт. Публикуются только `index.html`, `css/`, `js/` и `assets/`.
+
 ## Локальный просмотр
 
 В корне проекта:
