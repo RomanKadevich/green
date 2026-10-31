@@ -1,9 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="207.0" height="46.0" viewBox="112.0 290.0 207.0 46.0" fill="none"><g id="button">
-<rect x="113" y="291" width="205" height="44" rx="22" stroke="#D0AA6F" stroke-width="2" />
-<g id="profile">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="138.75875000000002 304.75 11.730499999999978 16.35699999999997" fill="none"><g id="profile">
 <path id="Vector" d="M144.62 312.152C144.545 312.145 144.455 312.145 144.372 312.152C142.587 312.092 141.17 310.63 141.17 308.83C141.17 306.993 142.655 305.5 144.5 305.5C146.337 305.5 147.83 306.993 147.83 308.83C147.822 310.63 146.405 312.092 144.62 312.152Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#D0AA6F" />
 <path id="Vector_2" d="M140.87 314.92C139.055 316.135 139.055 318.115 140.87 319.322C142.933 320.702 146.315 320.702 148.378 319.322C150.193 318.107 150.193 316.128 148.378 314.92C146.323 313.548 142.94 313.548 140.87 314.92Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#D0AA6F" />
-</g>
 </g>
 </svg>

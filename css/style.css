@@ -195,6 +195,87 @@ p {
   height: 100%;
   max-width: none;
 }
+
+/* Photographs and decorative artwork are separate from the HTML/CSS surfaces. */
+.source-part,
+.source-letter {
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.source-part { display: block; }
+.source-letter {
+  font-family: "Roboto Variable", sans-serif;
+  line-height: 1;
+  white-space: pre;
+  transform-origin: 0 0;
+}
+.landing .photo-field > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.hero-background,
+.hero-background > img,
+.win-badge {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-background { pointer-events: none; }
+.rules-surfaces { position: absolute; inset: 0; }
+.grand-prize-border,
+.prize-frame,
+.product-frame {
+  position: absolute;
+  inset: 0;
+  border: calc(6 * var(--u)) solid #ffe19b;
+  border-radius: calc(40 * var(--u));
+  pointer-events: none;
+}
+.grand-prize-border { z-index: 1; }
+.grand-prize-background {
+  position: absolute;
+  inset: calc(3 * var(--u));
+  border-radius: calc(37 * var(--u));
+  overflow: hidden;
+}
+.grand-prize-background > img { display: block; width: 100%; height: 100%; }
+.prize-frame,
+.product-frame { background: white; }
+.product-frame {
+  border-width: calc(3.10265 * var(--u));
+  border-radius: calc(20.684 * var(--u));
+}
+.product-photos { position: absolute; inset: 0; }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .grand-prize-border { border-width: calc(4 * var(--u)); }
+  .grand-prize-background { inset: calc(2 * var(--u)); border-radius: calc(38 * var(--u)); }
+}
+@media (max-width: 767px) {
+  .grand-prize-background { inset: calc(1.5 * var(--u)); border-radius: calc(28.5 * var(--u)); }
+  .grand-prize-border,
+  .prize-frame {
+    border-width: calc(3 * var(--u));
+    border-radius: calc(30 * var(--u));
+  }
+  .product-frame {
+    border-width: calc(2.58547 * var(--u));
+    border-radius: calc(17.236 * var(--u));
+  }
+  .product-photos,
+  .mobile-prize-scale {
+    position: absolute;
+    inset: 0;
+    width: calc(480 * var(--u));
+    height: calc(484 * var(--u));
+    transform: scale(0.8333333333);
+    transform-origin: 0 0;
+  }
+}
 .rules-copy {
   position: absolute;
   inset: 0;
@@ -455,6 +536,7 @@ p {
   max-width: none;
   transform-origin: center;
 }
+.snow-particle > img { display: block; max-width: none; }
 .snow-layer--prizes {
   z-index: 0;
 }
@@ -1048,23 +1130,8 @@ section[id],
     left: calc(50% + 21 * var(--u));
   }
 }
-@media (max-width: 767px) {
-  .landing {
-    position: relative;
-    border-radius: calc(40 * var(--u));
-  }
-}
-@media (max-width: 767px) {
-  .landing::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: calc(4 * var(--u)) solid #000;
-    border-radius: inherit;
-    pointer-events: none;
-    z-index: 50;
-  }
-}
+
+
 @media (max-width: 767px) {
   .landing .faq-list {
     transform: translateY(calc(-1 * var(--u)));
@@ -1551,26 +1618,22 @@ summary::-webkit-details-marker {
     content: "";
     position: absolute;
     top: 0;
-    left: calc(4 * var(--u));
-    right: calc(4 * var(--u));
+    left: 0;
+    right: 0;
     height: calc(100 * var(--u));
     background: #19643b;
     box-shadow: 0 calc(3 * var(--u)) calc(20 * var(--u)) #062d18;
     z-index: 1;
     pointer-events: none;
   }
-  .landing.menu-open::after {
-    display: none;
-  }
   .landing .navigation.is-open {
     background: #19643b;
-    border: calc(4 * var(--u)) solid #000;
-    border-top: 0;
-    border-radius: 0 0 calc(40 * var(--u)) calc(40 * var(--u));
+    border: 0;
+    border-radius: 0;
   }
   .navigation.is-open .menu-content {
-    min-height: calc(902 * var(--u));
-    margin-left: calc(-4 * var(--u));
+    min-height: calc(906 * var(--u));
+    margin-left: 0;
     box-shadow: none;
   }
   .navigation.is-open a {
@@ -1621,4 +1684,31 @@ summary::-webkit-details-marker {
     height: calc(906 * var(--u));
     pointer-events: none;
   }
+}
+
+/* The account outline is a CSS surface around a separate original icon. */
+@media (max-width: 1199px) {
+  .navigation.is-open .menu-account::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: calc(2 * var(--u)) solid #ffe19b;
+    border-radius: calc(23 * var(--u));
+    pointer-events: none;
+  }
+  .navigation.is-open .menu-account .menu-profile {
+    position: absolute;
+    inset: auto;
+    left: calc(23.75875 * var(--u));
+    top: calc(14.75 * var(--u));
+    width: calc(11.7305 * var(--u));
+    height: calc(16.357 * var(--u));
+  }
+}
+@media (max-width: 767px) {
+  .navigation.is-open .menu-account::before { border-color: #d0aa6f; }
+  .navigation.is-open .menu-account .menu-profile { left: calc(26.75875 * var(--u)); }
+}
+@media (max-width: 1199px) {
+  .motion-off .snow-layer--prizes { visibility: hidden; }
 }
