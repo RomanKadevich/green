@@ -22,8 +22,6 @@ document.addEventListener("click", (event) => {
   const trigger = event.target.closest("[data-dialog]");
   if (trigger) {
     const dialog = document.getElementById(trigger.dataset.dialog);
-    if (trigger.dataset.dialog === "legal-dialog")
-      dialog.querySelector("h2").textContent = trigger.textContent.trim();
     dialog.showModal();
   }
   if (event.target.closest("[data-close-dialog]"))
@@ -43,46 +41,81 @@ function visibleCards() {
       : 3;
 }
 function describeCards(carousel) {
-  [...carousel.querySelectorAll("[data-card]")].forEach((card, index) =>
+  [...carousel.querySelectorAll("[data-card]:not([data-clone])")].forEach((card, index) =>
     card.setAttribute("aria-hidden", String(index >= visibleCards())),
   );
 }
+
+// Move a full card in 320 ms. A temporary copy fills the incoming edge;
+// after the move the original card takes its place, keeping the loop seamless.
+const carouselMoves = new Map();
 function rotateCarousel(carousel, direction) {
+  if (carouselMoves.has(carousel)) return;
   const track = carousel.querySelector(".card-track");
-  if (direction > 0) track.append(track.firstElementChild);
-  else track.prepend(track.lastElementChild);
-  describeCards(carousel);
+  const card = direction > 0 ? track.firstElementChild : track.lastElementChild;
+  const reorder = () => direction > 0 ? track.append(card) : track.prepend(card);
+  if (matchMedia("(prefers-reduced-motion:reduce)").matches) {
+    reorder();
+    describeCards(carousel);
+    return;
+  }
+  const step = card.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap);
+  const copy = card.cloneNode(true);
+  copy.dataset.clone = "";
+  copy.setAttribute("aria-hidden", "true");
+  copy.inert = true;
+  if (direction > 0) track.append(copy);
+  else track.prepend(copy);
+  carousel.setAttribute("aria-busy", "true");
+  const move = track.animate([
+    { transform: `translateX(${direction > 0 ? 0 : -step}px)` },
+    { transform: `translateX(${direction > 0 ? -step : 0}px)` },
+  ], { duration: 320, easing: "ease", fill: "both" });
+  const finish = () => {
+    if (!carouselMoves.has(carousel)) return;
+    reorder();
+    copy.remove();
+    move.cancel();
+    carouselMoves.delete(carousel);
+    carousel.removeAttribute("aria-busy");
+    describeCards(carousel);
+  };
+  carouselMoves.set(carousel, finish);
+  move.finished.then(finish).catch(() => {});
 }
 for (const carousel of document.querySelectorAll(".carousel")) {
   carousel.addEventListener("click", (event) => {
     const button = event.target.closest("[data-carousel-direction]");
-    if (button)
-      rotateCarousel(carousel, Number(button.dataset.carouselDirection));
+    if (button) rotateCarousel(carousel, Number(button.dataset.carouselDirection));
   });
-  let startX;
-  carousel.addEventListener(
-    "touchstart",
-    (event) => {
-      startX = event.changedTouches[0].clientX;
-    },
-    { passive: true },
-  );
-  carousel.addEventListener(
-    "touchend",
-    (event) => {
-      const distance = event.changedTouches[0].clientX - startX;
-      if (Math.abs(distance) > 45)
-        rotateCarousel(carousel, distance < 0 ? 1 : -1);
-    },
-    { passive: true },
-  );
+  let startX, startY;
+  carousel.addEventListener("touchstart", (event) => {
+    startX = event.changedTouches[0].clientX;
+    startY = event.changedTouches[0].clientY;
+  }, { passive: true });
+  carousel.addEventListener("touchend", (event) => {
+    const dx = event.changedTouches[0].clientX - startX;
+    const dy = event.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy))
+      rotateCarousel(carousel, dx < 0 ? 1 : -1);
+  }, { passive: true });
   describeCards(carousel);
 }
-for (const detail of document.querySelectorAll(".faq-item")) {
-  detail.addEventListener("toggle", () => {
-    if (detail.open)
-      for (const other of document.querySelectorAll(".faq-item[open]"))
-        if (other !== detail) other.open = false;
+
+function setQuestion(item, open) {
+  item.classList.toggle("is-open", open);
+  item.querySelector(".faq-question").setAttribute("aria-expanded", String(open));
+  const answer = item.querySelector(".faq-reveal");
+  answer.setAttribute("aria-hidden", String(!open));
+  answer.inert = !open;
+}
+for (const question of document.querySelectorAll(".faq-question")) {
+  question.addEventListener("click", () => {
+    const item = question.closest(".faq-item");
+    const open = !item.classList.contains("is-open");
+    for (const other of document.querySelectorAll(".faq-item.is-open"))
+      if (other !== item) setQuestion(other, false);
+    setQuestion(item, open);
   });
 }
 
@@ -100,10 +133,10 @@ if (query.get("motion") === "off")
 // staggered entrances, and a fade during the final part of each descent.
 // Each flake owns its repeat: later flakes never wait for the whole group.
 const snowTracks = {
-  "снежинка 2": { duration: 10000, entrance: 1100 },
-  "снежинка 6": { duration: 11000, entrance: 1100 },
-  "снежинка 8": { duration: 10800, entrance: 3500 },
-  "снежинка 3": { duration: 10200, entrance: 5200 },
+  "снежинка 2": { entrance: 1001, points: [[0,57,0],[100,62.8,1],[2001,173,1],[4002,293,1],[6003,381,1],[8004,461,0.6],[10005,541,0]] },
+  "снежинка 6": { entrance: 1001, points: [[0,41,0],[100,46.2,1],[2001,145,1],[4002,215,1],[6003,325,1],[8004,465,0.5],[10005,605,0]] },
+  "снежинка 8": { entrance: 3002, points: [[0,58,0],[100,61.45,1],[2001,127,1],[4002,242,1],[6003,362,1],[8004,492,0.5],[10005,622,0]] },
+  "снежинка 3": { entrance: 5003, x: -30, points: [[0,35,0],[100,42.7,1],[2001,189,1],[4002,358,1],[6003,426,0.5],[8004,494,0]] },
 };
 
 // The recording also has two large glints. Keep their original geometry
@@ -159,21 +192,24 @@ function animateSnow() {
       const style = getComputedStyle(element);
       const top = parseFloat(style.top);
       const height = parseFloat(style.height);
-      const distance = (area === "prizes" ? 430 : 600) * unit * verticalScale + height;
-      const start = -top - height;
-      // Position is linear throughout, including the opacity fade. No hold frame.
-      const at = (fraction, opacity) => ({
-        offset: fraction,
-        transform: `translateY(${start + distance * fraction}px)`,
-        opacity,
-      });
+      const duration = track.points.at(-1)[0];
+      const firstY = track.points[0][1];
+      const frame = ([time, y, opacity]) => {
+        let target = area === "prizes"
+          ? -height + (y - firstY) * unit * verticalScale * 0.65
+          : (y - 110) * unit * verticalScale;
+        if (time === 0) target = Math.min(target, -height);
+        return {
+          offset: time / duration,
+          transform: `translate(calc(${track.x || 0} * var(--u) * var(--motion-x-scale)),${target - top}px)`,
+          opacity,
+        };
+      };
       const occurrence = occurrences.get(area + key) || 0;
       occurrences.set(area + key, occurrence + 1);
-      player = element.animate([
-        at(0, 0), at(0.12, 1), at(0.68, 1), at(1, 0),
-      ], {
-        duration: track.duration,
-        delay: track.entrance + occurrence * track.duration / 2,
+      player = element.animate(track.points.map(frame), {
+        duration,
+        delay: track.entrance + occurrence * duration / 2,
         iterations: Infinity,
         easing: "linear",
         fill: "both",
@@ -200,6 +236,7 @@ let resizeFrame;
 window.addEventListener("resize", () => {
   cancelAnimationFrame(resizeFrame);
   resizeFrame = requestAnimationFrame(() => {
+    for (const finish of [...carouselMoves.values()]) finish();
     for (const c of document.querySelectorAll(".carousel")) describeCards(c);
     if (visibleCards() === 3) setMenu(false);
     animateSnow();
