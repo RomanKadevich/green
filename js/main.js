@@ -133,10 +133,10 @@ if (query.get("motion") === "off")
 // staggered entrances, and a fade during the final part of each descent.
 // Each flake owns its repeat: later flakes never wait for the whole group.
 const snowTracks = {
-  "снежинка 2": { entrance: 3002, points: [[0,57,0],[100,62.8,1],[2001,173,1],[4002,293,1],[6003,381,1],[8004,461,0.6],[10005,541,0]] },
-  "снежинка 6": { entrance: 3002, points: [[0,41,0],[100,46.2,1],[2001,145,1],[4002,215,1],[6003,325,1],[8004,465,0.5],[10005,605,0]] },
-  "снежинка 8": { entrance: 5003, points: [[0,58,0],[100,61.45,1],[2001,127,1],[4002,242,1],[6003,362,1],[8004,492,0.5],[10005,622,0]] },
-  "снежинка 3": { entrance: 7004, x: -30, points: [[0,35,0],[100,42.7,1],[2001,189,1],[4002,358,1],[6003,426,0.5],[8004,494,0]] },
+  "снежинка 2": { entrance: 350, points: [[0,57,0],[100,62.8,1],[2001,173,1],[4002,293,1],[6003,381,1],[8004,461,0.6],[10005,541,0]] },
+  "снежинка 6": { entrance: 350, points: [[0,41,0],[100,46.2,1],[2001,145,1],[4002,215,1],[6003,325,1],[8004,465,0.5],[10005,605,0]] },
+  "снежинка 8": { entrance: 2351, points: [[0,58,0],[100,61.45,1],[2001,127,1],[4002,242,1],[6003,362,1],[8004,492,0.5],[10005,622,0]] },
+  "снежинка 3": { entrance: 4352, x: -30, points: [[0,35,0],[100,42.7,1],[2001,189,1],[4002,358,1],[6003,426,0.5],[8004,494,0]] },
 };
 
 // Monotone cubic interpolation: neighbouring segments share the same speed.
@@ -249,16 +249,16 @@ function animateSnow() {
     if (sourceTime !== null) player.pause();
     players.push(player);
   }
-  // Quick, overlapping intro like the Sosedi reference; snow timings stay intact.
+  // Overlapping, evenly paced fades; snow starts while the heading appears.
   // Separate opacity from glint transforms so their fall/scale tracks stay intact.
   for (const [selector, delay, duration] of [
-    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 80, 720],
-    [".hero .campaign-date", 620, 720],
-    [".hero .win-badge", 740, 780],
+    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 0, 1400],
+    [".hero .campaign-date", 250, 1200],
+    [".hero .win-badge", 450, 1200],
   ]) {
     for (const element of document.querySelectorAll(selector)) {
       const player = element.animate([{ opacity: 0 }, { opacity: 1 }], {
-        delay, duration, easing: "cubic-bezier(0.22, 1, 0.36, 1)", fill: "both",
+        delay, duration, easing: "cubic-bezier(0.42, 0, 0.58, 1)", fill: "both",
       });
       player.currentTime = elapsed;
       if (sourceTime !== null) player.pause();
