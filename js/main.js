@@ -277,10 +277,8 @@ window.addEventListener("resize", () => {
     animateSnow();
   });
 });
-// Decode the actual responsive hero sources before starting the shared clock.
-// This also avoids a different start time for the title, snow and win badge.
-if (query.get("motion") !== "off" && !reducedMotion.matches)
-  document.documentElement.classList.add("motion-loading");
+// HTML starts in motion-loading so deferred JS cannot flash the finished title.
+// Decode responsive hero sources before starting the shared animation clock.
 Promise.all([...document.querySelectorAll(".hero-scene img, .hero-background img")]
   .map((image) => image.decode().catch(() => {})))
   .then(() => {
