@@ -249,11 +249,11 @@ function animateSnow() {
     if (sourceTime !== null) player.pause();
     players.push(player);
   }
-  // Figma intro: title + glints 0–2000 ms, date + win badge 2001–3001 ms.
+  // Intro shortened by 20%: title/glints 0–1600 ms, date/win badge 1601–2401 ms.
   // Separate opacity from glint transforms so their fall/scale tracks stay intact.
   for (const [selector, delay, duration] of [
-    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 1, 2000],
-    [".hero .campaign-date, .hero .win-badge", 2001, 1000],
+    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 1, 1600],
+    [".hero .campaign-date, .hero .win-badge", 1601, 800],
   ]) {
     for (const element of document.querySelectorAll(selector)) {
       const player = element.animate([{ opacity: 0 }, { opacity: 1 }], {

@@ -2284,3 +2284,5 @@ section[id], #rules, #top  {
   .motion-loading .hero .win-badge,
   .motion-loading .hero .snow-particle { opacity: 1; }
 }
+
+.faq-answer p + p { margin-top: .65em; }

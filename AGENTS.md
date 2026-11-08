@@ -20,7 +20,7 @@
 - The user has requested GitHub Pages publication and reports it configured. Push the verified completed changes to main to trigger the existing deployment.
 
 - 2026-11-08: use the name «Сладкий сезон больших призов» throughout page text and metadata. Both cabinet anchors point to https://www.green-market.by/login; header/footer logos keep the GREEN homepage URL.
-- Canonical and social URLs use https://igra.green-market.by/. Provided OG artwork is assets/og-cover.webp (lossless, 1280×910).
+- Canonical and social URLs use https://igra.green-market.by/. Provided OG artwork is assets/og-cover-prizes.webp (lossless, 1280×910).
 - Include all 8 source prizes and all 6 source brands in the looping carousels; keep photos separate from HTML/CSS frames.
 - Production DNS points to a separate server, not GitHub Pages. production.yml is gated on DEPLOY_HOST and needs SSH variables/secrets before actual server deployment. Do not report production published until verified on that domain.
 
@@ -28,3 +28,8 @@
 - Product FAQ answer links to the exact organizer PDF at assets/spisok-tovarov.pdf, opening in a new tab.
 
 - Smooth snow velocity across keyframes using monotone cubic interpolation. Keep the source positions/times and independent linear opacity animation unchanged; no new stops or overshoot.
+
+- Latest user adjustment: shorten banner intro opacity transitions by 20%: title/glints 1–1601 ms, date/win badge 1601–2401 ms. Snow entrance, fall and fade timings remain unchanged.
+
+- FAQ source is now the organizer file «Вопрос-ответ.docx», with 7 complete entries in document order. Replace old draft questions/answers; remove editorial «(ссылка)» markers. Product list remains the provided PDF. Official rules PDF is still pending organizer path/URL.
+- OG preview uses og-cover-prizes.webp with the updated campaign name in the large heading and fine print. Preserve original QR, logos, packaging, car and contact details.
