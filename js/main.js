@@ -249,15 +249,16 @@ function animateSnow() {
     if (sourceTime !== null) player.pause();
     players.push(player);
   }
-  // Intro shortened by 20%: title/glints 0–1600 ms, date/win badge 1601–2401 ms.
+  // Quick, overlapping intro like the Sosedi reference; snow timings stay intact.
   // Separate opacity from glint transforms so their fall/scale tracks stay intact.
   for (const [selector, delay, duration] of [
-    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 1, 1600],
-    [".hero .campaign-date, .hero .win-badge", 1601, 800],
+    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 80, 720],
+    [".hero .campaign-date", 620, 720],
+    [".hero .win-badge", 740, 780],
   ]) {
     for (const element of document.querySelectorAll(selector)) {
       const player = element.animate([{ opacity: 0 }, { opacity: 1 }], {
-        delay, duration, easing: "linear", fill: "both",
+        delay, duration, easing: "cubic-bezier(0.22, 1, 0.36, 1)", fill: "both",
       });
       player.currentTime = elapsed;
       if (sourceTime !== null) player.pause();

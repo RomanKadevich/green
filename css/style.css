@@ -219,6 +219,16 @@ section[id], #rules, #top  {
   height: calc(18 * var(--u));
 }
 
+.account-link, .menu-account, .winners-button {
+  transition: scale .18s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .account-link:hover, .menu-account:hover, .winners-button:hover {
+    scale: 1.03;
+  }
+}
+
 /* Баннер: фон, заголовок, машина, набор и декоративная плашка. */
 .hero  {
   position: relative;
@@ -669,9 +679,8 @@ section[id], #rules, #top  {
   width: 73.725%;
 }
 
-/* FAQ — обычные details, ответы расширяют страницу по содержимому. */
+/* FAQ: ответы расширяют страницу по содержимому. */
 .faq-section  {
-  min-height: calc(1080 * var(--u));
   padding-top: calc(133 * var(--u));
 }
 
@@ -762,8 +771,7 @@ section[id], #rules, #top  {
 }
 
 .winners-section  {
-  height: calc(356 * var(--u));
-  padding-top: calc(116 * var(--u));
+  padding-block: calc(140 * var(--u)) calc(120 * var(--u));
 }
 
 .winners-button  {
@@ -1391,7 +1399,6 @@ section[id], #rules, #top  {
   }
 
   .faq-section  {
-    min-height: calc(1000 * var(--u));
     padding-top: calc(85 * var(--u));
   }
 
@@ -1426,8 +1433,7 @@ section[id], #rules, #top  {
   }
 
   .winners-section  {
-    height: calc(248 * var(--u));
-    padding-top: calc(68 * var(--u));
+    padding-block: calc(74 * var(--u)) calc(80 * var(--u));
   }
 
   .winners-button  {
@@ -1956,7 +1962,6 @@ section[id], #rules, #top  {
   }
 
   .faq-section  {
-    min-height: calc(936 * var(--u));
     padding-top: calc(4 * var(--u));
   }
 
@@ -2009,8 +2014,7 @@ section[id], #rules, #top  {
   }
 
   .winners-section  {
-    height: calc(198 * var(--u));
-    padding-top: calc(48 * var(--u));
+    padding-block: calc(80 * var(--u)) calc(80 * var(--u));
   }
 
   .winners-button  {
@@ -2241,7 +2245,8 @@ section[id], #rules, #top  {
 }
 
 @media (prefers-reduced-motion:reduce)  {
-  .faq-item, .faq-question, .faq-question img, .faq-reveal {
+  .faq-item, .faq-question, .faq-question img, .faq-reveal,
+  .account-link, .menu-account, .winners-button {
     transition: none;
   }
   html  {
