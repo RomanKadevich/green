@@ -139,6 +139,23 @@ const snowTracks = {
   "снежинка 3": { entrance: 7004, x: -30, points: [[0,35,0],[100,42.7,1],[2001,189,1],[4002,358,1],[6003,426,0.5],[8004,494,0]] },
 };
 
+// Monotone cubic interpolation: neighbouring segments share the same speed.
+// Keyframe times/positions stay exact; only the travel between them is smoothed.
+function smoothFallEasings(positions) {
+  const intervals = positions.slice(1).map(([time], i) => time - positions[i][0]);
+  const speeds = positions.slice(1).map(([, y], i) => (y - positions[i][1]) / intervals[i]);
+  const tangents = [speeds[0]];
+  for (let i = 1; i < speeds.length; i++) {
+    const before = speeds[i - 1], after = speeds[i];
+    const w1 = 2 * intervals[i] + intervals[i - 1];
+    const w2 = intervals[i] + 2 * intervals[i - 1];
+    tangents.push(before * after <= 0 ? 0 : (w1 + w2) / (w1 / before + w2 / after));
+  }
+  tangents.push(speeds.at(-1));
+  return speeds.map((speed, i) => speed === 0 ? "linear" :
+    `cubic-bezier(0.333333333,${tangents[i] / (3 * speed)},0.666666667,${1 - tangents[i + 1] / (3 * speed)})`);
+}
+
 // The recording also has two large glints. Keep their original geometry
 // transitions separate from the revised, independently repeating snow.
 function animateGlint(element, key, elapsed) {
@@ -194,26 +211,36 @@ function animateSnow() {
       const height = parseFloat(style.height);
       const duration = track.points.at(-1)[0];
       const firstY = track.points[0][1];
-      const frame = ([time, y, opacity]) => {
+      const positions = track.points.map(([time, y]) => {
         let target = area === "prizes"
           ? -height + (y - firstY) * unit * verticalScale * 0.65
           : (y - 110) * unit * verticalScale;
         if (time === 0) target = Math.min(target, -height);
-        return {
-          offset: time / duration,
-          transform: `translate(calc(${track.x || 0} * var(--u) * var(--motion-x-scale)),${target - top}px)`,
-          opacity,
-        };
-      };
+        return [time, target - top];
+      });
+      const easings = smoothFallEasings(positions);
+      const frames = positions.map(([time, y], index) => ({
+        offset: time / duration,
+        transform: `translate(calc(${track.x || 0} * var(--u) * var(--motion-x-scale)),${y}px)`,
+        easing: easings[index] || "linear",
+      }));
       const occurrence = occurrences.get(area + key) || 0;
       occurrences.set(area + key, occurrence + 1);
-      player = element.animate(track.points.map(frame), {
+      const timing = {
         duration,
         delay: track.entrance + occurrence * duration / 2,
         iterations: Infinity,
         easing: "linear",
         fill: "both",
-      });
+      };
+      player = element.animate(frames, timing);
+      // Opacity keeps the video's original linear track, independent of speed.
+      const fade = element.animate(track.points.map(([time, , opacity]) => ({
+        offset: time / duration, opacity,
+      })), timing);
+      fade.currentTime = elapsed;
+      if (sourceTime !== null) fade.pause();
+      players.push(fade);
     } else {
       if (key.endsWith("1") || key.endsWith("7")) animateGlint(element, key, elapsed);
       continue;

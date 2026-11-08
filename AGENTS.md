@@ -26,3 +26,5 @@
 
 - 2026-11-08 motion correction: the newer supplied MOV and archived Figma intro transitions take precedence over the old recording offset. Title/glints fade in over 2000 ms; date/win badge fade from 2001–3001 ms; falling tracks enter at 3002/5003/7004 ms. Start the shared clock after hero images decode, preserve independent continuous snow repeats and reduced motion.
 - Product FAQ answer links to the exact organizer PDF at assets/spisok-tovarov.pdf, opening in a new tab.
+
+- Smooth snow velocity across keyframes using monotone cubic interpolation. Keep the source positions/times and independent linear opacity animation unchanged; no new stops or overshoot.
