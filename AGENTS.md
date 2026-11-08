@@ -18,3 +18,8 @@
 
 - FAQ expands/collapses smoothly in 220 ms; whole question is a pointer button. Carousels slide horizontally in 320 ms and loop in both directions. Respect reduced motion. Fit all six original menu flakes within short portrait viewports without phone borders.
 - The user has requested GitHub Pages publication and reports it configured. Push the verified completed changes to main to trigger the existing deployment.
+
+- 2026-11-08: use the name «Сладкий сезон больших призов» throughout page text and metadata. Both cabinet anchors point to https://www.green-market.by/login; header/footer logos keep the GREEN homepage URL.
+- Canonical and social URLs use https://igra.green-market.by/. Provided OG artwork is assets/og-cover.webp (lossless, 1280×910).
+- Include all 8 source prizes and all 6 source brands in the looping carousels; keep photos separate from HTML/CSS frames.
+- Production DNS points to a separate server, not GitHub Pages. production.yml is gated on DEPLOY_HOST and needs SSH variables/secrets before actual server deployment. Do not report production published until verified on that domain.

@@ -2249,3 +2249,21 @@ section[id], #rules, #top  {
   }
 
 }
+
+/* Дополнительные призы: общий размер карточки, отдельное фото и текст. */
+.prize-card--tech .prize-photo {
+  display: block;
+  width: 82%;
+  height: 73%;
+  margin: 0 auto;
+  object-fit: contain;
+  transform: none;
+  border-radius: 0;
+}
+.prize-card--tech .prize-glint--top { left: 57%; top: 16%; }
+.product-card--oreo .product-brand img,
+.product-card--picnic .product-brand img,
+.product-card--belvita .product-brand img { width: 36%; height: 75%; margin-top: 3%; object-fit: contain; }
+.product-card--oreo .product-image img,
+.product-card--picnic .product-image img,
+.product-card--belvita .product-image img { width: 83%; height: 100%; object-fit: contain; }
