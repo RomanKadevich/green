@@ -2267,3 +2267,20 @@ section[id], #rules, #top  {
 .product-card--oreo .product-image img,
 .product-card--picnic .product-image img,
 .product-card--belvita .product-image img { width: 83%; height: 100%; object-fit: contain; }
+
+.faq-answer a {
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+.motion-loading .hero-title,
+.motion-loading .hero .campaign-date,
+.motion-loading .hero .win-badge,
+.motion-loading .hero .snow-particle {
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-loading .hero-title,
+  .motion-loading .hero .campaign-date,
+  .motion-loading .hero .win-badge,
+  .motion-loading .hero .snow-particle { opacity: 1; }
+}

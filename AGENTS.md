@@ -23,3 +23,6 @@
 - Canonical and social URLs use https://igra.green-market.by/. Provided OG artwork is assets/og-cover.webp (lossless, 1280×910).
 - Include all 8 source prizes and all 6 source brands in the looping carousels; keep photos separate from HTML/CSS frames.
 - Production DNS points to a separate server, not GitHub Pages. production.yml is gated on DEPLOY_HOST and needs SSH variables/secrets before actual server deployment. Do not report production published until verified on that domain.
+
+- 2026-11-08 motion correction: the newer supplied MOV and archived Figma intro transitions take precedence over the old recording offset. Title/glints fade in over 2000 ms; date/win badge fade from 2001–3001 ms; falling tracks enter at 3002/5003/7004 ms. Start the shared clock after hero images decode, preserve independent continuous snow repeats and reduced motion.
+- Product FAQ answer links to the exact organizer PDF at assets/spisok-tovarov.pdf, opening in a new tab.

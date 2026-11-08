@@ -121,7 +121,7 @@ for (const question of document.querySelectorAll(".faq-question")) {
 
 const query = new URLSearchParams(location.search);
 const reducedMotion = matchMedia("(prefers-reduced-motion:reduce)");
-const clockStart = performance.now();
+let clockStart = null;
 const players = [];
 const sourceTime = query.has("motion-time")
   ? Number(query.get("motion-time"))
@@ -133,10 +133,10 @@ if (query.get("motion") === "off")
 // staggered entrances, and a fade during the final part of each descent.
 // Each flake owns its repeat: later flakes never wait for the whole group.
 const snowTracks = {
-  "снежинка 2": { entrance: 1001, points: [[0,57,0],[100,62.8,1],[2001,173,1],[4002,293,1],[6003,381,1],[8004,461,0.6],[10005,541,0]] },
-  "снежинка 6": { entrance: 1001, points: [[0,41,0],[100,46.2,1],[2001,145,1],[4002,215,1],[6003,325,1],[8004,465,0.5],[10005,605,0]] },
-  "снежинка 8": { entrance: 3002, points: [[0,58,0],[100,61.45,1],[2001,127,1],[4002,242,1],[6003,362,1],[8004,492,0.5],[10005,622,0]] },
-  "снежинка 3": { entrance: 5003, x: -30, points: [[0,35,0],[100,42.7,1],[2001,189,1],[4002,358,1],[6003,426,0.5],[8004,494,0]] },
+  "снежинка 2": { entrance: 3002, points: [[0,57,0],[100,62.8,1],[2001,173,1],[4002,293,1],[6003,381,1],[8004,461,0.6],[10005,541,0]] },
+  "снежинка 6": { entrance: 3002, points: [[0,41,0],[100,46.2,1],[2001,145,1],[4002,215,1],[6003,325,1],[8004,465,0.5],[10005,605,0]] },
+  "снежинка 8": { entrance: 5003, points: [[0,58,0],[100,61.45,1],[2001,127,1],[4002,242,1],[6003,362,1],[8004,492,0.5],[10005,622,0]] },
+  "снежинка 3": { entrance: 7004, x: -30, points: [[0,35,0],[100,42.7,1],[2001,189,1],[4002,358,1],[6003,426,0.5],[8004,494,0]] },
 };
 
 // The recording also has two large glints. Keep their original geometry
@@ -175,7 +175,7 @@ function animateGlint(element, key, elapsed) {
 function animateSnow() {
   for (const player of players) player.cancel();
   players.length = 0;
-  if (query.get("motion") === "off" || reducedMotion.matches) return;
+  if (clockStart === null || query.get("motion") === "off" || reducedMotion.matches) return;
   const elapsed = sourceTime === null ? performance.now() - clockStart : sourceTime;
   const landing = document.querySelector(".landing");
   const designWidth = visibleCards() === 1 ? 430 : visibleCards() === 2 ? 1024 : 1920;
@@ -222,13 +222,20 @@ function animateSnow() {
     if (sourceTime !== null) player.pause();
     players.push(player);
   }
-  for (const element of document.querySelectorAll(".hero .campaign-date, .hero .win-badge")) {
-    const player = element.animate([{ opacity: 0 }, { opacity: 1 }], {
-      duration: 1000, easing: "linear", fill: "both",
-    });
-    player.currentTime = elapsed;
-    if (sourceTime !== null) player.pause();
-    players.push(player);
+  // Figma intro: title + glints 0–2000 ms, date + win badge 2001–3001 ms.
+  // Separate opacity from glint transforms so their fall/scale tracks stay intact.
+  for (const [selector, delay, duration] of [
+    [".hero-title, .hero .sparkle-left, .hero .sparkle-right, .hero .sparkle-left-middle, .hero .sparkle-right-middle", 1, 2000],
+    [".hero .campaign-date, .hero .win-badge", 2001, 1000],
+  ]) {
+    for (const element of document.querySelectorAll(selector)) {
+      const player = element.animate([{ opacity: 0 }, { opacity: 1 }], {
+        delay, duration, easing: "linear", fill: "both",
+      });
+      player.currentTime = elapsed;
+      if (sourceTime !== null) player.pause();
+      players.push(player);
+    }
   }
 }
 reducedMotion.addEventListener("change", animateSnow);
@@ -242,4 +249,14 @@ window.addEventListener("resize", () => {
     animateSnow();
   });
 });
-animateSnow();
+// Decode the actual responsive hero sources before starting the shared clock.
+// This also avoids a different start time for the title, snow and win badge.
+if (query.get("motion") !== "off" && !reducedMotion.matches)
+  document.documentElement.classList.add("motion-loading");
+Promise.all([...document.querySelectorAll(".hero-scene img, .hero-background img")]
+  .map((image) => image.decode().catch(() => {})))
+  .then(() => {
+    clockStart = performance.now();
+    animateSnow();
+    document.documentElement.classList.remove("motion-loading");
+  });
