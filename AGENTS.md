@@ -22,7 +22,7 @@
 - 2026-11-08: use the name «Сладкий сезон больших призов» throughout page text and metadata. Both cabinet anchors point to https://www.green-market.by/login; header/footer logos keep the GREEN homepage URL.
 - Canonical and social URLs use https://igra.green-market.by/. Provided OG artwork is assets/og-cover-prizes.webp (lossless, 1280×910).
 - Include all 8 source prizes and all 6 source brands in the looping carousels; keep photos separate from HTML/CSS frames.
-- Production DNS points to a separate server, not GitHub Pages. production.yml is gated on DEPLOY_HOST and needs SSH variables/secrets before actual server deployment. Do not report production published until verified on that domain.
+- Production uses Hoster ISPmanager at vh167.hoster.by, account h219396, site root /www/igra.green-market.by. production.yml uses FTPS with a pinned CA certificate; a dedicated jailed account h219396_green_actions and GitHub secret GREEN_FTP_PASSWORD are required. Gate deployment on repository variable GREEN_DEPLOY_ENABLED=true. Credential creation/transfer and first production publication still await the owner confirmation. Do not report production published until verified on that domain.
 
 - 2026-11-08 motion correction: the newer supplied MOV and archived Figma intro transitions take precedence over the old recording offset. Title/glints fade in over 2000 ms; date/win badge fade from 2001–3001 ms; falling tracks enter at 3002/5003/7004 ms. Start the shared clock after hero images decode, preserve independent continuous snow repeats and reduced motion.
 - Product FAQ answer links to the exact organizer PDF at assets/spisok-tovarov.pdf, opening in a new tab.

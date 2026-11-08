@@ -1,4 +1,4 @@
-name: Deploy GREEN to production server
+name: Deploy GREEN to Hoster
 
 on:
   push:
@@ -14,33 +14,16 @@ concurrency:
 
 jobs:
   deploy:
-    if: ${{ vars.DEPLOY_HOST != '' }}
+    if: ${{ vars.GREEN_DEPLOY_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     environment: production
     steps:
       - uses: actions/checkout@v6
-      - name: Upload static site over SSH
+      - name: Check publication files
+        run: python3 .github/hosting/deploy.py --check
+      - name: Publish to igra.green-market.by over FTPS
         env:
-          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
-          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
-          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
-          DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -n "$DEPLOY_HOST"
-          test -n "$DEPLOY_USER"
-          test -n "$SSH_PRIVATE_KEY"
-          test -n "$SSH_KNOWN_HOSTS"
-          [[ "$DEPLOY_PORT" =~ ^[0-9]+$ ]]
-          [[ "$DEPLOY_PATH" =~ ^/[a-zA-Z0-9_./-]+$ && "$DEPLOY_PATH" != / && "$DEPLOY_PATH" != *..* ]]
-          install -m 700 -d ~/.ssh
-          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/green_deploy
-          chmod 600 ~/.ssh/green_deploy
-          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-          trap 'rm -f ~/.ssh/green_deploy' EXIT
-          rsync -az --protect-args \
-            -e "ssh -i $HOME/.ssh/green_deploy -p $DEPLOY_PORT -o BatchMode=yes -o StrictHostKeyChecking=yes" \
-            index.html css js assets "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
+          GREEN_FTP_HOST: vh167.hoster.by
+          GREEN_FTP_USER: h219396_green_actions
+          GREEN_FTP_PASSWORD: ${{ secrets.GREEN_FTP_PASSWORD }}
+        run: python3 .github/hosting/deploy.py
