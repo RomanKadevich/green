@@ -43,3 +43,6 @@
 - OG uses og-cover-prizes-2x.webp, 2560x1811, based on the 7016x4962 Figma poster export. The source poster had old campaign text/dates; the approved current name/dates, original Figma title and approved QR are restored. Preserve source car/packaging/logos/contact pixels outside explicitly edited heading/date areas. Do not replace it with the outdated poster.
 
 - Initial motion-loading state belongs in HTML, before deferred JavaScript downloads. Otherwise the finished title can flash, disappear and fade in again on a real network. Remove this state after hero images decode and animations are initialized. Preserve the noscript and reduced-motion fallbacks.
+
+- 2026-11-09: remove the temporary rules popup entirely. Until the organizer sends the official PDF, keep «ПОЛНЫЕ ПРАВИЛА» as non-interactive text with its existing appearance; do not show placeholder rule copy. Later link both this label and the FAQ rules mention to the provided PDF.
+- App badges now use the exact destinations from the GREEN homepage footer: App Store https://apps.apple.com/by/app/green-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0/id1574473640 and Google Play https://play.google.com/store/apps/details?id=by.green_market.app&pli=1. Keep direct app listings, not search URLs.
