@@ -46,3 +46,6 @@
 
 - 2026-11-09: remove the temporary rules popup entirely. Until the organizer sends the official PDF, keep «ПОЛНЫЕ ПРАВИЛА» as non-interactive text with its existing appearance; do not show placeholder rule copy. Later link both this label and the FAQ rules mention to the provided PDF.
 - App badges now use the exact destinations from the GREEN homepage footer: App Store https://apps.apple.com/by/app/green-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0/id1574473640 and Google Play https://play.google.com/store/apps/details?id=by.green_market.app&pli=1. Keep direct app listings, not search URLs.
+
+- 2026-11-10: unify campaign dates across desktop/tablet/mobile: banner 20.11.2026–14.01.2027; full period through 18.03.2027. Footer card name is «GREENКАРТА» on every screen. These corrections replace the earlier instruction to preserve differing dates/copy.
+- FAQ registration and missing-code answers refer to registration/consent only in the personal account on green-market.by; remove mobile-app alternatives in these two answers. Link the added site mentions. Missing-code enquiries go to the game hotline +375 (29) 658 50 50 (tel:+375296585050), not the GREENКАРТА network call centre.
