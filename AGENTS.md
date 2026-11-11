@@ -8,7 +8,7 @@
 - Source Figma file: `xyQjX9MoJGpxK1UVIACjQ3`. Desktop `3745:11534` (1920 × 5419), tablet `3797:16623` (1024 × 4589), mobile `3831:4012` (430 × 4639).
 - Match dimensions, spacing, typography and image crops. After visual changes, make two fresh complete browser-to-Figma passes at all three reference widths before declaring the visual audit complete.
 - Campaign start: **20.11.2026** everywhere. Preserve the other differing source dates/copy until instructed otherwise.
-- Use original Figma artwork. Raster assets must be lossless WebP; original logos and icons remain SVG. Circe Bold is unavailable: keep original mobile-menu SVG word outlines inside accessible HTML controls.
+- Use original Figma artwork. Raster assets use WebP; the latest approved size/quality policy below replaces the initial lossless-only requirement. Original logos and icons remain SVG. Circe Bold is unavailable: keep original mobile-menu SVG word outlines inside accessible HTML controls.
 - Snow in hero and prizes follows the supplied 2026-10-31 Figma recording: straight falls, overlapping staggered entrances, fading while still moving; repeat each flake independently without a group pause (latest user correction). No rotation or shrinking. Respect reduced motion. `?motion=off` freezes reference positions; `?motion-time=ms` freezes the revised animation.
 - Keep exports, reports, temporary screenshots and asset-preparation tools outside the project. The local reference archive is the sibling directory `../green-reference/`.
 - Run a static local preview when checking changes. Do not deploy to hosting without a request.
@@ -49,3 +49,5 @@
 
 - 2026-11-10: unify campaign dates across desktop/tablet/mobile: banner 20.11.2026–14.01.2027; full period through 18.03.2027. Footer card name is «GREENКАРТА» on every screen. These corrections replace the earlier instruction to preserve differing dates/copy.
 - FAQ registration and missing-code answers refer to registration/consent only in the personal account on green-market.by; remove mobile-app alternatives in these two answers. Link the added site mentions. Missing-code enquiries go to the game hotline +375 (29) 658 50 50 (tel:+375296585050), not the GREENКАРТА network call centre.
+
+- 2026-11-11: user permits a small visible quality reduction to reduce download weight. Re-encode WebP files originally above 100 KiB using lossy quality 90/method 6; preserve all dimensions, 1x/2x sources and lossless alpha. The 29 smaller WebP files stay byte-identical. This explicitly supersedes lossless-only output; retain the Figma-derived lossless masters outside the repo and always encode from those masters, never repeatedly from lossy files. Original/optimized files, comparisons and SHA/dimension/alpha checks: ../green-reference/webp-2026-11-11/. All 64 delivered WebP files total 5,200,670 bytes instead of 34,482,120 bytes. Cache versions of changed images and OG use 20261111.1.
