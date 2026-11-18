@@ -1997,7 +1997,6 @@ section[id], #rules, #top  {
 
   .faq-item:first-child .faq-question  {
     font-family: "Roboto Variable",sans-serif;
-    font-weight: 400;
   }
 
   .faq-item.is-open .faq-question  {
