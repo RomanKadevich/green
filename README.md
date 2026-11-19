@@ -2,6 +2,8 @@
 
 Статический лендинг по [макету Figma](https://www.figma.com/design/xyQjX9MoJGpxK1UVIACjQ3/).
 
+Google Tag Manager `GTM-KXTGV27C` подключён в начале `<head>` присланным кодом: асинхронная загрузка контейнера и инициализация `dataLayer`/`gtag`. Теги и события управляются в самом контейнере GTM.
+
 ## Файлы сайта
 
 - `index.html` — разметка и текст.
